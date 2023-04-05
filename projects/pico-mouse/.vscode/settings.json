@@ -35,6 +35,10 @@
         "pll.h": "c",
         "usb_descriptors.h": "c",
         "tusb.h": "c",
-        "usbd_pvt.h": "c"
+        "usbd_pvt.h": "c",
+        "tusb_common.h": "c",
+        "string.h": "c",
+        "board.h": "c",
+        "hid.h": "c"
     }
 }

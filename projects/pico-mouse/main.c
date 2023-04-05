@@ -27,23 +27,24 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "bsp/board.h"
+#include "pico/stdlib.h"
+
 #include "tusb.h"
 
 #include "usb_descriptors.h"
 
 #include "PMW3360.h"
 
-//--------------------------------------------------------------------+
-// MACRO CONSTANT TYPEDEF PROTYPES
-//--------------------------------------------------------------------+
+#define PIN_LED             25
+#define PIN_MOUSE1          14
+#define PIN_MOUSE2          15
 
-/* Blink pattern
- * - 250 ms    : device not mounted
- * - 1000 ms : device mounted
- * - 2500 ms : device is suspended
- */
-enum    {
+#define TIMESTAMP_US()      (to_us_since_boot(get_absolute_time()))
+#define TIMESTAMP_MS()      (to_ms_since_boot(get_absolute_time()))
+
+// LED blink intervals
+enum {
+    BLINK_PMW_ERROR = 100,
     BLINK_NOT_MOUNTED = 250,
     BLINK_MOUNTED = 1000,
     BLINK_SUSPENDED = 2500,
@@ -51,32 +52,42 @@ enum    {
 
 static uint32_t blink_interval_ms = BLINK_NOT_MOUNTED;
 
-void led_blinking_task(void);
+void led_task(void);
 void hid_task(void);
 
-/*------------- MAIN -------------*/
 int main(void)
 {
-    board_init();
+    // Initialize LED pin
+    gpio_init(PIN_LED);
+    gpio_set_dir(PIN_LED, GPIO_OUT);
+    gpio_put(PIN_LED, 0);
+
+    // Initialize MOUSE1 pin
+    gpio_init(PIN_MOUSE1);
+    gpio_set_dir(PIN_MOUSE1, GPIO_IN);
+    gpio_pull_up(PIN_MOUSE1);
+
+    // Initialize MOUSE2 pin
+    gpio_init(PIN_MOUSE2);
+    gpio_set_dir(PIN_MOUSE2, GPIO_IN);
+    gpio_pull_up(PIN_MOUSE2);
 
     // Initialize PMW3360 sensor
     if (!PMW3360_init()) {
         // Error while initializing, blink LED
         while (1) {
-            board_led_write(1);
-            sleep_ms(1000);
-            board_led_write(0);
-            sleep_ms(1000);
+            blink_interval_ms = BLINK_PMW_ERROR;
+            led_task();
         }
     }
     
+    // Initialize TinyUSB
     tusb_init();
 
-    while (1)
-    {
-        tud_task(); // tinyusb device task
-        led_blinking_task();
-
+    // Run tasks in main loop
+    while (1) {
+        tud_task();
+        led_task();
         hid_task();
     }
 
@@ -104,7 +115,6 @@ void tud_umount_cb(void)
 // Within 7ms, device must draw an average of current less than 2.5 mA from bus
 void tud_suspend_cb(bool remote_wakeup_en)
 {
-    (void) remote_wakeup_en;
     blink_interval_ms = BLINK_SUSPENDED;
 }
 
@@ -118,42 +128,76 @@ void tud_resume_cb(void)
 // USB HID
 //--------------------------------------------------------------------+
 
-static void send_hid_report()
+#define BUTTON_DEBOUNCE_MS      10
+
+static uint8_t getButtonMask(void)
 {
-    PMW3360_data data;
-    int8_t const delta = 5;
+    uint32_t timestamp = TIMESTAMP_MS();
 
-    // skip if hid is not ready yet
-    if ( !tud_hid_ready() ) return;
+    // Check if MOUSE1 button has changed after debounce delay
+    static bool buttonLastM1 = false;
+    static uint32_t timestampLastM1 = 0;
+    if ((timestamp - timestampLastM1) > BUTTON_DEBOUNCE_MS) {
+        // Check if button has changed
+        if (!gpio_get(PIN_MOUSE1) ^ buttonLastM1) {
+            buttonLastM1 ^= true;
+            timestampLastM1 = timestamp;
+        }
+    }
 
-    // Read data from PMW3360 sensor
-    PMW3360_read(&data);
+    // Check if MOUSE2 button has changed after debounce delay
+    static bool buttonLastM2 = false;
+    static uint32_t timestampLastM2 = 0;
+    if ((timestamp - timestampLastM2) > BUTTON_DEBOUNCE_MS) {
+        // Check if button has changed
+        if (!gpio_get(PIN_MOUSE2) ^ buttonLastM2) {
+            buttonLastM2 ^= true;
+            timestampLastM2 = timestamp;
+        }
+    }
 
-    // no button, right + down, no scroll, no pan
-    tud_hid_mouse_report(REPORT_ID_MOUSE, 0x00, data.dx, data.dy, 0, 0);
+    // Return button mask
+    return ((buttonLastM2 << 1) | (buttonLastM1 << 0));
 }
 
 // Every 10ms, we will sent 1 report for each HID profile (keyboard, mouse etc ..)
 // tud_hid_report_complete_cb() is used to send the next report after previous one is complete
 void hid_task(void)
 {
-    // Poll every 10ms
-    const uint32_t interval_ms = 10;
-    static uint32_t start_ms = 0;
-
-    if ( board_millis() - start_ms < interval_ms) return; // not enough time
-    start_ms += interval_ms;
-
-    uint32_t const btn = board_button_read();
+    uint8_t buttonMask;
+    PMW3360_data data;
+    
+    // Poll every 1000us
+    const uint32_t interval_us = 1000;
+    static uint32_t start_us = 0;
+    if (TIMESTAMP_US() - start_us < interval_us) {
+        // not enough time
+        return;
+    }
+    start_us += interval_us;
 
     // Remote wakeup
-    if ( tud_suspended() && btn ) {
+    uint32_t const btn = false;
+    if (tud_suspended() && btn) {
         // Wake up host if we are in suspend mode
         // and REMOTE_WAKEUP feature is enabled by host
         tud_remote_wakeup();
     }
     else {
-        send_hid_report();
+
+        // skip if hid is not ready yet
+        if (!tud_hid_ready()) {
+            return;
+        }
+
+        // Read buttons
+        buttonMask = getButtonMask();
+
+        // Read data from PMW3360 sensor
+        PMW3360_read(&data);
+
+        // no button, right + down, no scroll, no pan
+        tud_hid_mouse_report(REPORT_ID_MOUSE, buttonMask, data.dx, data.dy, 0, 0);
     }
 }
 
@@ -162,9 +206,6 @@ void hid_task(void)
 // Note: For composite reports, report[0] is report ID
 void tud_hid_report_complete_cb(uint8_t instance, uint8_t const* report, uint16_t len)
 {
-    (void) instance;
-    (void) len;
-
     return;
 }
 
@@ -173,13 +214,6 @@ void tud_hid_report_complete_cb(uint8_t instance, uint8_t const* report, uint16_
 // Return zero will cause the stack to STALL request
 uint16_t tud_hid_get_report_cb(uint8_t instance, uint8_t report_id, hid_report_type_t report_type, uint8_t* buffer, uint16_t reqlen)
 {
-    // TODO not Implemented
-    (void) instance;
-    (void) report_id;
-    (void) report_type;
-    (void) buffer;
-    (void) reqlen;
-
     return 0;
 }
 
@@ -187,26 +221,30 @@ uint16_t tud_hid_get_report_cb(uint8_t instance, uint8_t report_id, hid_report_t
 // received data on OUT endpoint ( Report ID = 0, Type = 0 )
 void tud_hid_set_report_cb(uint8_t instance, uint8_t report_id, hid_report_type_t report_type, uint8_t const* buffer, uint16_t bufsize)
 {
-    (void) instance;
-
     return;
 }
 
 //--------------------------------------------------------------------+
 // BLINKING TASK
 //--------------------------------------------------------------------+
-void led_blinking_task(void)
+void led_task(void)
 {
     static uint32_t start_ms = 0;
     static bool led_state = false;
 
     // blink is disabled
-    if (!blink_interval_ms) return;
+    if (!blink_interval_ms) {
+        return;
+    }
 
     // Blink every interval ms
-    if ( board_millis() - start_ms < blink_interval_ms) return; // not enough time
+    if (TIMESTAMP_MS() - start_ms < blink_interval_ms) {
+        // not enough time
+        return;
+    }
     start_ms += blink_interval_ms;
 
-    board_led_write(led_state);
-    led_state = 1 - led_state; // toggle
+    // toggle LED
+    gpio_put(PIN_LED, led_state);
+    led_state ^= 1;
 }
