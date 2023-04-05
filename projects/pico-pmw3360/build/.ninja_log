@@ -4,10 +4,10 @@
 69	153	7018068897814876	pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf	dd38c3be14f98c7
 153	167	7018068898281522	pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin	791dddc78059d08c
 167	206	7018068898652807	pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S	b1ad8a825e549d10
-137	323	7018097790992668	CMakeFiles/pico-pmw3360.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj	c1c796e67d42b729
-65	217	7018097790009258	CMakeFiles/pico-pmw3360.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/timeout_helper.c.obj	7f7863a4a5779011
 153	167	7018068898281522	C:/Users/Brent/Documents/GitHub/RP2040-dev/projects/pico-pmw3360/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin	791dddc78059d08c
 240	368	7018097791514479	CMakeFiles/pico-pmw3360.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj	698b236b775dee1f
+137	323	7018097790992668	CMakeFiles/pico-pmw3360.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj	c1c796e67d42b729
+65	217	7018097790009258	CMakeFiles/pico-pmw3360.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/timeout_helper.c.obj	7f7863a4a5779011
 42	130	7018097789201467	CMakeFiles/pico-pmw3360.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj	f893e2d828f9cb42
 167	206	7018068898652807	C:/Users/Brent/Documents/GitHub/RP2040-dev/projects/pico-pmw3360/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S	b1ad8a825e549d10
 31	152	7018097789422232	CMakeFiles/pico-pmw3360.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj	5689648eb47197a6
@@ -54,3 +54,7 @@
 394	579	7018097793722133	CMakeFiles/pico-pmw3360.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj	afa59f6c1c28241b
 372	628	7018097794233908	CMakeFiles/pico-pmw3360.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_float/float_math.c.obj	beafd4958a8c181e
 106	254	7019846258324033	pico-pmw3360.elf	49c919d299ffede4
+9	97	7023377981781138	CMakeFiles/pico-pmw3360.dir/C_/Users/Brent/Documents/GitHub/PMW3360-Firmware/src/PMW3360.c.obj	833edb3e20d4087b
+97	347	7023377983662632	pico-pmw3360.elf	49c919d299ffede4
+11	95	7023380664257754	CMakeFiles/pico-pmw3360.dir/C_/Users/Brent/Documents/GitHub/PMW3360-Firmware/src/PMW3360.c.obj	833edb3e20d4087b
+96	233	7023380665070573	pico-pmw3360.elf	49c919d299ffede4
