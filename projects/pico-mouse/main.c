@@ -30,17 +30,14 @@
 #include "pico/stdlib.h"
 
 #include "tusb.h"
-
 #include "usb_descriptors.h"
 
 #include "PMW3360.h"
+#include "buttons.h"
+
+#define POLLING_RATE        1000
 
 #define PIN_LED             25
-#define PIN_MOUSE1          14
-#define PIN_MOUSE2          15
-
-#define TIMESTAMP_US()      (to_us_since_boot(get_absolute_time()))
-#define TIMESTAMP_MS()      (to_ms_since_boot(get_absolute_time()))
 
 // LED blink intervals
 enum {
@@ -49,7 +46,6 @@ enum {
     BLINK_MOUNTED = 1000,
     BLINK_SUSPENDED = 2500,
 };
-
 static uint32_t blink_interval_ms = BLINK_NOT_MOUNTED;
 
 void led_task(void);
@@ -62,15 +58,8 @@ int main(void)
     gpio_set_dir(PIN_LED, GPIO_OUT);
     gpio_put(PIN_LED, 0);
 
-    // Initialize MOUSE1 pin
-    gpio_init(PIN_MOUSE1);
-    gpio_set_dir(PIN_MOUSE1, GPIO_IN);
-    gpio_pull_up(PIN_MOUSE1);
-
-    // Initialize MOUSE2 pin
-    gpio_init(PIN_MOUSE2);
-    gpio_set_dir(PIN_MOUSE2, GPIO_IN);
-    gpio_pull_up(PIN_MOUSE2);
+    // Initialize mouse buttons
+    buttons_init();
 
     // Initialize PMW3360 sensor
     if (!PMW3360_init()) {
@@ -94,9 +83,64 @@ int main(void)
     return 0;
 }
 
+// Toggle LED at variable interval
+void led_task(void)
+{
+    static uint32_t start_ms = 0;
+    static bool led_state = false;
+    uint32_t timestamp = to_ms_since_boot(get_absolute_time());
+
+    // Blink every interval ms
+    if (timestamp - start_ms >= blink_interval_ms) {
+        // toggle LED
+        led_state ^= 1;
+        gpio_put(PIN_LED, led_state);
+        start_ms += blink_interval_ms;
+    }
+}
+
 //--------------------------------------------------------------------+
-// Device callbacks
+// USB HID
 //--------------------------------------------------------------------+
+
+// Send HID report at a fixed polling rate
+void hid_task(void)
+{
+    uint8_t buttonMask;
+    uint32_t timestamp;
+    PMW3360_data data;
+    
+    // Poll mouse at a fixed rate
+    static uint32_t start_us = 0;
+    const uint32_t interval_us = 1000000/POLLING_RATE;
+    timestamp = to_us_since_boot(get_absolute_time());
+    if (timestamp - start_us >= interval_us) {
+        // Increment start counter
+        start_us += interval_us;
+
+        // Check if device is currently suspended
+        if (tud_suspended()) {
+            // Read buttons
+            if (buttons_getMask()) {
+                // Wake up host if REMOTE_WAKEUP feature is enabled by host
+                tud_remote_wakeup();
+            }
+        }
+        else {
+            // Send report if HID is ready
+            if (tud_hid_ready()) {
+                // Read buttons and get mask
+                buttonMask = buttons_getMask();
+
+                // Read data from PMW3360 sensor
+                PMW3360_read(&data);
+
+                // Send mouse data to host
+                tud_hid_mouse_report(REPORT_ID_MOUSE, buttonMask, data.dx, data.dy, 0, 0);
+            }
+        }
+    }
+}
 
 // Invoked when device is mounted
 void tud_mount_cb(void)
@@ -111,8 +155,6 @@ void tud_umount_cb(void)
 }
 
 // Invoked when usb bus is suspended
-// remote_wakeup_en : if host allow us    to perform remote wakeup
-// Within 7ms, device must draw an average of current less than 2.5 mA from bus
 void tud_suspend_cb(bool remote_wakeup_en)
 {
     blink_interval_ms = BLINK_SUSPENDED;
@@ -122,83 +164,6 @@ void tud_suspend_cb(bool remote_wakeup_en)
 void tud_resume_cb(void)
 {
     blink_interval_ms = BLINK_MOUNTED;
-}
-
-//--------------------------------------------------------------------+
-// USB HID
-//--------------------------------------------------------------------+
-
-#define BUTTON_DEBOUNCE_MS      10
-
-static uint8_t getButtonMask(void)
-{
-    uint32_t timestamp = TIMESTAMP_MS();
-
-    // Check if MOUSE1 button has changed after debounce delay
-    static bool buttonLastM1 = false;
-    static uint32_t timestampLastM1 = 0;
-    if ((timestamp - timestampLastM1) > BUTTON_DEBOUNCE_MS) {
-        // Check if button has changed
-        if (!gpio_get(PIN_MOUSE1) ^ buttonLastM1) {
-            buttonLastM1 ^= true;
-            timestampLastM1 = timestamp;
-        }
-    }
-
-    // Check if MOUSE2 button has changed after debounce delay
-    static bool buttonLastM2 = false;
-    static uint32_t timestampLastM2 = 0;
-    if ((timestamp - timestampLastM2) > BUTTON_DEBOUNCE_MS) {
-        // Check if button has changed
-        if (!gpio_get(PIN_MOUSE2) ^ buttonLastM2) {
-            buttonLastM2 ^= true;
-            timestampLastM2 = timestamp;
-        }
-    }
-
-    // Return button mask
-    return ((buttonLastM2 << 1) | (buttonLastM1 << 0));
-}
-
-// Every 10ms, we will sent 1 report for each HID profile (keyboard, mouse etc ..)
-// tud_hid_report_complete_cb() is used to send the next report after previous one is complete
-void hid_task(void)
-{
-    uint8_t buttonMask;
-    PMW3360_data data;
-    
-    // Poll every 1000us
-    const uint32_t interval_us = 1000;
-    static uint32_t start_us = 0;
-    if (TIMESTAMP_US() - start_us < interval_us) {
-        // not enough time
-        return;
-    }
-    start_us += interval_us;
-
-    // Remote wakeup
-    uint32_t const btn = false;
-    if (tud_suspended() && btn) {
-        // Wake up host if we are in suspend mode
-        // and REMOTE_WAKEUP feature is enabled by host
-        tud_remote_wakeup();
-    }
-    else {
-
-        // skip if hid is not ready yet
-        if (!tud_hid_ready()) {
-            return;
-        }
-
-        // Read buttons
-        buttonMask = getButtonMask();
-
-        // Read data from PMW3360 sensor
-        PMW3360_read(&data);
-
-        // no button, right + down, no scroll, no pan
-        tud_hid_mouse_report(REPORT_ID_MOUSE, buttonMask, data.dx, data.dy, 0, 0);
-    }
 }
 
 // Invoked when sent REPORT successfully to host
@@ -222,29 +187,4 @@ uint16_t tud_hid_get_report_cb(uint8_t instance, uint8_t report_id, hid_report_t
 void tud_hid_set_report_cb(uint8_t instance, uint8_t report_id, hid_report_type_t report_type, uint8_t const* buffer, uint16_t bufsize)
 {
     return;
-}
-
-//--------------------------------------------------------------------+
-// BLINKING TASK
-//--------------------------------------------------------------------+
-void led_task(void)
-{
-    static uint32_t start_ms = 0;
-    static bool led_state = false;
-
-    // blink is disabled
-    if (!blink_interval_ms) {
-        return;
-    }
-
-    // Blink every interval ms
-    if (TIMESTAMP_MS() - start_ms < blink_interval_ms) {
-        // not enough time
-        return;
-    }
-    start_ms += blink_interval_ms;
-
-    // toggle LED
-    gpio_put(PIN_LED, led_state);
-    led_state ^= 1;
 }
