@@ -38,6 +38,7 @@
 
 // GPIO pin for LED
 #define PIN_LED             25
+#define PIN_TEST            0
 
 // LED blink intervals
 enum {
@@ -54,11 +55,16 @@ void hid_task(void);
 
 // Main routine
 int main(void)
-{
+ {
     // Initialize LED pin
     gpio_init(PIN_LED);
     gpio_set_dir(PIN_LED, GPIO_OUT);
     gpio_put(PIN_LED, 0);
+
+    // Initialize TEST pin
+    gpio_init(PIN_TEST);
+    gpio_set_dir(PIN_TEST, GPIO_OUT);
+    gpio_put(PIN_TEST, 0);
 
     // Initialize mouse buttons
     buttons_init();
@@ -110,30 +116,27 @@ void hid_task(void)
     
     // Poll mouse at a fixed rate
     static uint32_t start_us = 0;
-    const uint32_t interval_us = 1000000UL/POLLING_RATE_HZ;
+    const uint32_t interval_us = 1000000/POLLING_RATE_HZ;
     timestamp = to_us_since_boot(get_absolute_time());
     if (timestamp - start_us >= interval_us) {
         // Increment start counter
         start_us += interval_us;
 
-        // Check if device is currently suspended
-        if (tud_suspended()) {
-            // Read buttons
-            if (buttons_getMask()) {
-                // Wake up host if REMOTE_WAKEUP feature is enabled by host
-                tud_remote_wakeup();
-            }
+        // Read buttons and get mask
+        buttonMask = buttons_getMask();
+
+        // Check if device is currently suspended and button is pressed
+        if (tud_suspended() && buttonMask) {
+            // Wake up host if REMOTE_WAKEUP feature is enabled by host
+            tud_remote_wakeup();
         }
         else {
-            // Send mouse report if HID is ready
+            // Read data from PMW3360 sensor
+            PMW3360_read(&data);
+
+            // Send mouse report to host if HID is ready
             if (tud_hid_ready()) {
-                // Read buttons and get mask
-                buttonMask = buttons_getMask();
-
-                // Read data from PMW3360 sensor
-                PMW3360_read(&data);
-
-                // Send mouse data to host
+                gpio_put(PIN_TEST, 1);
                 tud_hid_mouse_report(REPORT_ID_MOUSE, buttonMask, data.dx, data.dy, 0, 0);
             }
         }
@@ -169,6 +172,7 @@ void tud_resume_cb(void)
 // Note: For composite reports, report[0] is report ID
 void tud_hid_report_complete_cb(uint8_t instance, uint8_t const* report, uint16_t len)
 {
+    gpio_put(PIN_TEST, 0);
     return;
 }
 

@@ -13,7 +13,6 @@ pico_sdk_init()
 include_directories(
     .
 	../../../PMW3360-Firmware/src
-    "${PICO_SDK_PATH}/lib/tinyusb/hw"
     "${PICO_SDK_PATH}/lib/tinyusb/src"
 )
 
@@ -30,7 +29,7 @@ add_executable(pico-mouse
 )
 
 # Add pico_stdlib library which aggregates commonly used features
-target_link_libraries(pico-mouse pico_stdlib hardware_spi tinyusb_device tinyusb_board)
+target_link_libraries(pico-mouse pico_stdlib hardware_spi tinyusb_device)
 
 # create map/bin/hex/uf2 file in addition to ELF.
 pico_add_extra_outputs(pico-mouse)

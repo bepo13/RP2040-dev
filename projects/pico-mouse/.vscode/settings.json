@@ -41,6 +41,8 @@
         "board.h": "c",
         "hid.h": "c",
         "buttons.h": "c",
-        "stdint.h": "c"
+        "stdint.h": "c",
+        "tusb_option.h": "c",
+        "tusb_debug.h": "c"
     }
 }
