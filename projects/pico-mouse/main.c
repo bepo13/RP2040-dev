@@ -1,7 +1,6 @@
-/* 
- * The MIT License (MIT)
+/* MIT License
  *
- * Copyright (c) 2019 Ha Thach (tinyusb.org)
+ * Copyright (c) 2023 Brent Peterson
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -10,17 +9,16 @@
  * copies of the Software, and to permit persons to whom the Software is
  * furnished to do so, subject to the following conditions:
  *
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
  * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- * THE SOFTWARE.
- *
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
  */
 
 #include <stdlib.h>
@@ -35,8 +33,10 @@
 #include "PMW3360.h"
 #include "buttons.h"
 
-#define POLLING_RATE        1000
+// Poll mouse at a fixed rate
+#define POLLING_RATE_HZ     1000
 
+// GPIO pin for LED
 #define PIN_LED             25
 
 // LED blink intervals
@@ -48,9 +48,11 @@ enum {
 };
 static uint32_t blink_interval_ms = BLINK_NOT_MOUNTED;
 
+// Polling tasks
 void led_task(void);
 void hid_task(void);
 
+// Main routine
 int main(void)
 {
     // Initialize LED pin
@@ -93,15 +95,11 @@ void led_task(void)
     // Blink every interval ms
     if (timestamp - start_ms >= blink_interval_ms) {
         // toggle LED
-        led_state ^= 1;
+        led_state ^= true;
         gpio_put(PIN_LED, led_state);
         start_ms += blink_interval_ms;
     }
 }
-
-//--------------------------------------------------------------------+
-// USB HID
-//--------------------------------------------------------------------+
 
 // Send HID report at a fixed polling rate
 void hid_task(void)
@@ -112,7 +110,7 @@ void hid_task(void)
     
     // Poll mouse at a fixed rate
     static uint32_t start_us = 0;
-    const uint32_t interval_us = 1000000/POLLING_RATE;
+    const uint32_t interval_us = 1000000UL/POLLING_RATE_HZ;
     timestamp = to_us_since_boot(get_absolute_time());
     if (timestamp - start_us >= interval_us) {
         // Increment start counter
@@ -127,7 +125,7 @@ void hid_task(void)
             }
         }
         else {
-            // Send report if HID is ready
+            // Send mouse report if HID is ready
             if (tud_hid_ready()) {
                 // Read buttons and get mask
                 buttonMask = buttons_getMask();

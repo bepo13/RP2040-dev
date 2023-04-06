@@ -1,7 +1,6 @@
-/* 
- * The MIT License (MIT)
+/* MIT License
  *
- * Copyright (c) 2019 Ha Thach (tinyusb.org)
+ * Copyright (c) 2023 Brent Peterson
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -10,18 +9,20 @@
  * copies of the Software, and to permit persons to whom the Software is
  * furnished to do so, subject to the following conditions:
  *
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
  * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- * THE SOFTWARE.
- *
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
  */
+
+#ifndef BUTTONS_H__
+#define BUTTONS_H__
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -29,53 +30,78 @@
 
 #include "pico/stdlib.h"
 
-#define PIN_MOUSE1              14
-#define PIN_MOUSE2              15
+// Minimum time between button transitions
+#define BUTTON_DEBOUNCE_MS  10
 
-#define DEBOUNCE_MS             10
+// Structure definition for mouse button
+typedef struct {
+    uint32_t pin;
+    uint8_t mask;
+} t_button;
+
+// Mouse button configuration structure (add buttons here)
+t_button buttons[] = {
+    {
+        .pin = 14,
+        .mask = MOUSE_BUTTON_LEFT
+    },
+    {
+        .pin = 15,
+        .mask = MOUSE_BUTTON_RIGHT
+    }
+};
+
+// Number of buttons configured
+#define BUTTON_COUNT    (sizeof(buttons)/sizeof(t_button))
 
 // Initialize mouse buttons
 static void buttons_init(void)
 {
-    // Initialize MOUSE1 pin
-    gpio_init(PIN_MOUSE1);
-    gpio_set_dir(PIN_MOUSE1, GPIO_IN);
-    gpio_pull_up(PIN_MOUSE1);
+    uint32_t i;
 
-    // Initialize MOUSE2 pin
-    gpio_init(PIN_MOUSE2);
-    gpio_set_dir(PIN_MOUSE2, GPIO_IN);
-    gpio_pull_up(PIN_MOUSE2);
+    // Initialize all mouse buttons
+    for (i = 0; i < BUTTON_COUNT; i++) {
+        gpio_init(buttons[i].pin);
+        gpio_set_dir(buttons[i].pin, GPIO_IN);
+        gpio_pull_up(buttons[i].pin);
+    }
 }
+
+// Definition for mouse button state
+typedef struct {
+    bool last;
+    uint32_t timestamp;
+} t_buttonState;
 
 // Poll mouse buttons and return mask
 static uint8_t buttons_getMask(void)
 {
+    uint32_t i;
+    uint32_t timestamp;
+    static uint8_t mask = 0;
+    static t_buttonState states[BUTTON_COUNT] = {0};
+
     // Get current timestamp
-    uint32_t timestamp = to_ms_since_boot(get_absolute_time());
+    timestamp = to_ms_since_boot(get_absolute_time());
 
-    // Check if MOUSE1 button has changed after debounce delay
-    static bool buttonLastM1 = false;
-    static uint32_t timestampLastM1 = 0;
-    if ((timestamp - timestampLastM1) > DEBOUNCE_MS) {
-        // Check if button has changed
-        if (!gpio_get(PIN_MOUSE1) ^ buttonLastM1) {
-            buttonLastM1 ^= true;
-            timestampLastM1 = timestamp;
-        }
-    }
+    // Poll all mouse buttons
+    for (i = 0; i < BUTTON_COUNT; i++) {
+        // Check time since last state change; only check button if past debounce delay
+        if ((timestamp - states[i].timestamp) > BUTTON_DEBOUNCE_MS) {
+            // Check if button has changed (active low)
+            if (!gpio_get(buttons[i].pin) ^ states[i].last) {
+                // Update button state and timestamp
+                states[i].last ^= true;
+                states[i].timestamp = timestamp;
 
-    // Check if MOUSE2 button has changed after debounce delay
-    static bool buttonLastM2 = false;
-    static uint32_t timestampLastM2 = 0;
-    if ((timestamp - timestampLastM2) > DEBOUNCE_MS) {
-        // Check if button has changed
-        if (!gpio_get(PIN_MOUSE2) ^ buttonLastM2) {
-            buttonLastM2 ^= true;
-            timestampLastM2 = timestamp;
+                // Toggle button mask
+                mask ^= buttons[i].mask;
+            }
         }
     }
 
     // Return button mask
-    return ((buttonLastM2 << 1) | (buttonLastM1 << 0));
+    return mask;
 }
+
+#endif //BUTTONS_H__
