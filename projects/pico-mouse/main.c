@@ -30,24 +30,14 @@
 #include "tusb.h"
 #include "usb_descriptors.h"
 
-#include "PMW3360.h"
 #include "buttons.h"
+#include "PMW3360.h"
 
-// Poll mouse at a fixed rate
+// Poll mouse at a fixed rate (1000Hz max)
 #define POLLING_RATE_HZ     1000
 
 // GPIO pin for LED
 #define PIN_LED             25
-#define PIN_TEST            0
-
-// LED blink intervals
-enum {
-    BLINK_PMW_ERROR = 100,
-    BLINK_NOT_MOUNTED = 250,
-    BLINK_MOUNTED = 1000,
-    BLINK_SUSPENDED = 2500,
-};
-static uint32_t blink_interval_ms = BLINK_NOT_MOUNTED;
 
 // Polling tasks
 void led_task(void);
@@ -61,11 +51,6 @@ int main(void)
     gpio_set_dir(PIN_LED, GPIO_OUT);
     gpio_put(PIN_LED, 0);
 
-    // Initialize TEST pin
-    gpio_init(PIN_TEST);
-    gpio_set_dir(PIN_TEST, GPIO_OUT);
-    gpio_put(PIN_TEST, 0);
-
     // Initialize mouse buttons
     buttons_init();
 
@@ -73,8 +58,10 @@ int main(void)
     if (!PMW3360_init()) {
         // Error while initializing, blink LED
         while (1) {
-            blink_interval_ms = BLINK_PMW_ERROR;
-            led_task();
+            gpio_put(PIN_LED, 1);
+            sleep_ms(100);
+            gpio_put(PIN_LED, 0);
+            sleep_ms(100);
         }
     }
     
@@ -84,27 +71,10 @@ int main(void)
     // Run tasks in main loop
     while (1) {
         tud_task();
-        led_task();
         hid_task();
     }
 
     return 0;
-}
-
-// Toggle LED at variable interval
-void led_task(void)
-{
-    static uint32_t start_ms = 0;
-    static bool led_state = false;
-    uint32_t timestamp = to_ms_since_boot(get_absolute_time());
-
-    // Blink every interval ms
-    if (timestamp - start_ms >= blink_interval_ms) {
-        // toggle LED
-        led_state ^= true;
-        gpio_put(PIN_LED, led_state);
-        start_ms += blink_interval_ms;
-    }
 }
 
 bool dataReady = false;
@@ -149,25 +119,25 @@ void hid_task(void)
 // Invoked when device is mounted
 void tud_mount_cb(void)
 {
-    blink_interval_ms = BLINK_MOUNTED;
+    return;
 }
 
 // Invoked when device is unmounted
 void tud_umount_cb(void)
 {
-    blink_interval_ms = BLINK_NOT_MOUNTED;
+    return;
 }
 
 // Invoked when usb bus is suspended
 void tud_suspend_cb(bool remote_wakeup_en)
 {
-    blink_interval_ms = BLINK_SUSPENDED;
+    return;
 }
 
 // Invoked when usb bus is resumed
 void tud_resume_cb(void)
 {
-    blink_interval_ms = BLINK_MOUNTED;
+    return;
 }
 
 // Invoked when sent REPORT successfully to host

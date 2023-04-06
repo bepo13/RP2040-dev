@@ -43,6 +43,8 @@
         "buttons.h": "c",
         "stdint.h": "c",
         "tusb_option.h": "c",
-        "tusb_debug.h": "c"
+        "tusb_debug.h": "c",
+        "pico.h": "c",
+        "uart.h": "c"
     }
 }
