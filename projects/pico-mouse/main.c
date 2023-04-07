@@ -33,7 +33,7 @@
 #include "buttons.h"
 #include "PMW3360.h"
 
-// Poll mouse at a fixed rate (1000Hz max)
+// Poll mouse at a fixed rate (1000Hz is max for USB1.1)
 #define POLLING_RATE_HZ     1000
 
 // GPIO pin for LED
@@ -76,14 +76,14 @@ int main(void)
     return 0;
 }
 
-// Data structure for HID report
+// Data structure for HID mouse report
 typedef struct {
     bool ready;
     uint8_t mask;
     uint8_t x;
     uint8_t y;
-} t_hid_data;
-static t_hid_data hid_data = {0};
+} t_hid_mouse_report;
+t_hid_mouse_report hid_mouse_report = {0};
 
 // Send HID report at a fixed polling rate
 void hid_task(void)
@@ -112,16 +112,16 @@ void hid_task(void)
             // Read data from PMW3360 sensor
             PMW3360_read(&data);
 
-            // Populate HID data being reported
-            hid_data.x = data.dx;
-            hid_data.y = data.dy;
-            hid_data.mask = buttonMask;
-            hid_data.ready = true;
+            // Populate HID mouse report
+            hid_mouse_report.x = data.dx;
+            hid_mouse_report.y = data.dy;
+            hid_mouse_report.mask = buttonMask;
+            hid_mouse_report.ready = true;
 
             // Send mouse report to host if HID is ready
             if (tud_hid_ready()) {
-                tud_hid_mouse_report(REPORT_ID_MOUSE, hid_data.mask, hid_data.x, hid_data.y, 0, 0);
-                hid_data.ready = false;
+                tud_hid_mouse_report(REPORT_ID_MOUSE, hid_mouse_report.mask, hid_mouse_report.x, hid_mouse_report.y, 0, 0);
+                hid_mouse_report.ready = false;
             }
         }
     }
@@ -157,9 +157,9 @@ void tud_resume_cb(void)
 void tud_hid_report_complete_cb(uint8_t instance, uint8_t const* report, uint16_t len)
 {
     // If data is ready send report to host
-    if (hid_data.ready) {
-        tud_hid_mouse_report(REPORT_ID_MOUSE, hid_data.mask, hid_data.x, hid_data.y, 0, 0);
-        hid_data.ready = false;
+    if (hid_mouse_report.ready) {
+        tud_hid_mouse_report(REPORT_ID_MOUSE, hid_mouse_report.mask, hid_mouse_report.x, hid_mouse_report.y, 0, 0);
+        hid_mouse_report.ready = false;
     }
     return;
 }
