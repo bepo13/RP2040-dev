@@ -1499,9 +1499,9 @@ Discarded input sections
  .debug_frame   0x00000000       0xa0 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
  .ARM.attributes
                 0x00000000       0x2c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
- .text          0x00000000        0x0 C:\Users\Brent\AppData\Local\Temp\cc406eDf.o
- .data          0x00000000        0x0 C:\Users\Brent\AppData\Local\Temp\cc406eDf.o
- .bss           0x00000000        0x0 C:\Users\Brent\AppData\Local\Temp\cc406eDf.o
+ .text          0x00000000        0x0 C:\Users\Brent\AppData\Local\Temp\ccCxNQSs.o
+ .data          0x00000000        0x0 C:\Users\Brent\AppData\Local\Temp\ccCxNQSs.o
+ .bss           0x00000000        0x0 C:\Users\Brent\AppData\Local\Temp\ccCxNQSs.o
  .data          0x00000000        0x0 c:/progra~1/raspbe~1/picosd~1.0/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
  .bss           0x00000000        0x0 c:/progra~1/raspbe~1/picosd~1.0/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
  .text          0x00000000        0x0 c:/progra~1/raspbe~1/picosd~1.0/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg.a(lib_a-calloc.o)
@@ -1717,11 +1717,11 @@ LOAD c:/progra~1/raspbe~1/picosd~1.0/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.
 .boot2          0x10000000      0x100
                 0x10000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x10000000      0x100 C:\Users\Brent\AppData\Local\Temp\cc406eDf.o
+ .boot2         0x10000000      0x100 C:\Users\Brent\AppData\Local\Temp\ccCxNQSs.o
                 0x10000100                __boot2_end__ = .
                 0x00000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
-.text           0x10000100     0x6418
+.text           0x10000100     0x6420
                 0x10000100                __logical_binary_start = .
  *(.vectors)
  .vectors       0x10000100       0xd4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -1831,581 +1831,581 @@ LOAD c:/progra~1/raspbe~1/picosd~1.0/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.
  .text.PMW3360_readRegister
                 0x100005f8       0x6c CMakeFiles/pico-mouse.dir/C_/Users/Brent/Documents/GitHub/PMW3360-Firmware/src/PMW3360.c.obj
  .text.PMW3360_init
-                0x10000664      0x150 CMakeFiles/pico-mouse.dir/C_/Users/Brent/Documents/GitHub/PMW3360-Firmware/src/PMW3360.c.obj
+                0x10000664      0x154 CMakeFiles/pico-mouse.dir/C_/Users/Brent/Documents/GitHub/PMW3360-Firmware/src/PMW3360.c.obj
                 0x10000664                PMW3360_init
  .text.PMW3360_read
-                0x100007b4       0xc4 CMakeFiles/pico-mouse.dir/C_/Users/Brent/Documents/GitHub/PMW3360-Firmware/src/PMW3360.c.obj
-                0x100007b4                PMW3360_read
+                0x100007b8       0xc8 CMakeFiles/pico-mouse.dir/C_/Users/Brent/Documents/GitHub/PMW3360-Firmware/src/PMW3360.c.obj
+                0x100007b8                PMW3360_read
  .text.gpio_set_function
-                0x10000878       0x30 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x10000878                gpio_set_function
+                0x10000880       0x30 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x10000880                gpio_set_function
  .text.gpio_set_pulls
-                0x100008a8       0x34 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x100008a8                gpio_set_pulls
+                0x100008b0       0x34 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x100008b0                gpio_set_pulls
  .text.gpio_init
-                0x100008dc       0x16 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x100008dc                gpio_init
- *fill*         0x100008f2        0x2 
+                0x100008e4       0x16 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x100008e4                gpio_init
+ *fill*         0x100008fa        0x2 
  .text.running_on_fpga
-                0x100008f4       0x14 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
-                0x100008f4                running_on_fpga
+                0x100008fc       0x14 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+                0x100008fc                running_on_fpga
  .text.hw_claim_lock
-                0x10000908       0x18 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x10000908                hw_claim_lock
+                0x10000910       0x18 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x10000910                hw_claim_lock
  .text.hw_claim_unlock
-                0x10000920       0x14 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x10000920                hw_claim_unlock
+                0x10000928       0x14 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x10000928                hw_claim_unlock
  .text.hw_claim_or_assert
-                0x10000934       0x32 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x10000934                hw_claim_or_assert
+                0x1000093c       0x32 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x1000093c                hw_claim_or_assert
  .text.hw_claim_unused_from_range
-                0x10000966       0x50 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x10000966                hw_claim_unused_from_range
- *fill*         0x100009b6        0x2 
+                0x1000096e       0x50 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x1000096e                hw_claim_unused_from_range
+ *fill*         0x100009be        0x2 
  .text.spin_locks_reset
-                0x100009b8       0x20 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x100009b8                spin_locks_reset
+                0x100009c0       0x20 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x100009c0                spin_locks_reset
  .text.next_striped_spin_lock_num
-                0x100009d8       0x1c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x100009d8                next_striped_spin_lock_num
+                0x100009e0       0x1c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x100009e0                next_striped_spin_lock_num
  .text.spin_lock_claim_unused
-                0x100009f4       0x20 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x100009f4                spin_lock_claim_unused
+                0x100009fc       0x20 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x100009fc                spin_lock_claim_unused
  .text.set_raw_irq_handler_and_unlock
-                0x10000a14       0x28 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000a1c       0x28 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .text.make_branch
-                0x10000a3c       0x48 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000a44       0x48 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .text.insert_branch_and_link
-                0x10000a84       0x40 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000a8c       0x40 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .text.irq_is_enabled
-                0x10000ac4       0x18 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000ac4                irq_is_enabled
+                0x10000acc       0x18 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000acc                irq_is_enabled
  .text.irq_set_mask_enabled
-                0x10000adc       0x20 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000adc                irq_set_mask_enabled
+                0x10000ae4       0x20 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000ae4                irq_set_mask_enabled
  .text.irq_set_enabled
-                0x10000afc        0xe CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000afc                irq_set_enabled
- *fill*         0x10000b0a        0x2 
+                0x10000b04        0xe CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000b04                irq_set_enabled
+ *fill*         0x10000b12        0x2 
  .text.irq_get_vtable_handler
-                0x10000b0c       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000b0c                irq_get_vtable_handler
+                0x10000b14       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000b14                irq_get_vtable_handler
  .text.irq_set_exclusive_handler
-                0x10000b1c       0x54 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000b1c                irq_set_exclusive_handler
+                0x10000b24       0x54 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000b24                irq_set_exclusive_handler
  .text.irq_add_shared_handler
-                0x10000b70      0x234 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000b70                irq_add_shared_handler
+                0x10000b78      0x234 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000b78                irq_add_shared_handler
  .text.irq_remove_handler
-                0x10000da4      0x1ac CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000da4                irq_remove_handler
+                0x10000dac      0x1ac CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000dac                irq_remove_handler
  .text.irq_add_tail_to_free_list
-                0x10000f50       0xf0 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000f50                irq_add_tail_to_free_list
+                0x10000f58       0xf0 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000f58                irq_add_tail_to_free_list
  .text.irq_init_priorities
-                0x10001040       0x1c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10001040                irq_init_priorities
+                0x10001048       0x1c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10001048                irq_init_priorities
  .text.lock_init
-                0x1000105c       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_sync/lock_core.c.obj
-                0x1000105c                lock_init
+                0x10001064       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_sync/lock_core.c.obj
+                0x10001064                lock_init
  .text.mutex_init
-                0x1000106c       0x1a CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x1000106c                mutex_init
+                0x10001074       0x1a CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x10001074                mutex_init
  .text.recursive_mutex_init
-                0x10001086       0x1e CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x10001086                recursive_mutex_init
+                0x1000108e       0x1e CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x1000108e                recursive_mutex_init
  .text.critical_section_init_with_lock_num
-                0x100010a4       0x14 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_sync/critical_section.c.obj
-                0x100010a4                critical_section_init_with_lock_num
+                0x100010ac       0x14 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_sync/critical_section.c.obj
+                0x100010ac                critical_section_init_with_lock_num
  .text.critical_section_init
-                0x100010b8       0x14 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_sync/critical_section.c.obj
-                0x100010b8                critical_section_init
+                0x100010c0       0x14 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_sync/critical_section.c.obj
+                0x100010c0                critical_section_init
  .text.alarm_pool_post_alloc_init
-                0x100010cc       0x40 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
+                0x100010d4       0x40 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
  .text.sleep_until_callback
-                0x1000110c       0x30 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
+                0x10001114       0x30 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
  .text.timer_pool_entry_comparator
-                0x1000113c       0x7c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
-                0x1000113c                timer_pool_entry_comparator
+                0x10001144       0x7c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
+                0x10001144                timer_pool_entry_comparator
  .text.ph_add_child_node
-                0x100011b8       0xa4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
+                0x100011c0       0xa4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
  .text.ph_merge_nodes
-                0x1000125c       0x3e CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x1000129a        0x2 
+                0x10001264       0x3e CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x100012a2        0x2 
  .text.add_alarm_under_lock
-                0x1000129c      0x174 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
+                0x100012a4      0x174 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_alarm_callback
-                0x10001410      0x33c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
+                0x10001418      0x33c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_init_default
-                0x1000174c       0x40 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
-                0x1000174c                alarm_pool_init_default
+                0x10001754       0x40 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
+                0x10001754                alarm_pool_init_default
  .text.alarm_pool_get_default
-                0x1000178c       0x2c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
-                0x1000178c                alarm_pool_get_default
+                0x10001794       0x2c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
+                0x10001794                alarm_pool_get_default
  .text.alarm_pool_add_alarm_at
-                0x100017b8      0x168 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
-                0x100017b8                alarm_pool_add_alarm_at
+                0x100017c0      0x168 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
+                0x100017c0                alarm_pool_add_alarm_at
  .text.alarm_pool_cancel_alarm
-                0x10001920       0xf0 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
-                0x10001920                alarm_pool_cancel_alarm
+                0x10001928       0xf0 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
+                0x10001928                alarm_pool_cancel_alarm
  .text.sleep_until
-                0x10001a10       0xfc CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
-                0x10001a10                sleep_until
+                0x10001a18       0xfc CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
+                0x10001a18                sleep_until
  .text.sleep_us
-                0x10001b0c       0x58 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
-                0x10001b0c                sleep_us
+                0x10001b14       0x58 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
+                0x10001b14                sleep_us
  .text.sleep_ms
-                0x10001b64       0x14 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
-                0x10001b64                sleep_ms
+                0x10001b6c       0x14 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
+                0x10001b6c                sleep_ms
  .text.best_effort_wfe_or_timeout
-                0x10001b78       0xac CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
-                0x10001b78                best_effort_wfe_or_timeout
+                0x10001b80       0xac CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
+                0x10001b80                best_effort_wfe_or_timeout
  .text.hardware_alarm_irq_handler
-                0x10001c24       0x90 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001c2c       0x90 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .text.hardware_alarm_claim
-                0x10001cb4       0x18 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001cb4                hardware_alarm_claim
+                0x10001cbc       0x18 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001cbc                hardware_alarm_claim
  .text.time_us_64
-                0x10001ccc       0x18 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001ccc                time_us_64
+                0x10001cd4       0x18 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001cd4                time_us_64
  .text.busy_wait_until
-                0x10001ce4       0x28 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001ce4                busy_wait_until
+                0x10001cec       0x28 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001cec                busy_wait_until
  .text.hardware_alarm_set_callback
-                0x10001d0c       0x90 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001d0c                hardware_alarm_set_callback
+                0x10001d14       0x90 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001d14                hardware_alarm_set_callback
  .text.hardware_alarm_set_target
-                0x10001d9c       0xe8 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001d9c                hardware_alarm_set_target
+                0x10001da4       0xe8 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001da4                hardware_alarm_set_target
  .text.hardware_alarm_cancel
-                0x10001e84       0x40 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001e84                hardware_alarm_cancel
+                0x10001e8c       0x40 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001e8c                hardware_alarm_cancel
  .text.ph_add_child_node
-                0x10001ec4       0xa4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001ecc       0xa4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_merge_nodes
-                0x10001f68       0x3e CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_util/pheap.c.obj
- *fill*         0x10001fa6        0x2 
+                0x10001f70       0x3e CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_util/pheap.c.obj
+ *fill*         0x10001fae        0x2 
  .text.ph_clear
-                0x10001fa8       0x70 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x10001fa8                ph_clear
+                0x10001fb0       0x70 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001fb0                ph_clear
  .text.ph_post_alloc_init
-                0x10002018        0xe CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x10002018                ph_post_alloc_init
- *fill*         0x10002026        0x2 
+                0x10002020        0xe CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10002020                ph_post_alloc_init
+ *fill*         0x1000202e        0x2 
  .text.ph_merge_two_pass
-                0x10002028       0xa8 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x10002028                ph_merge_two_pass
+                0x10002030       0xa8 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10002030                ph_merge_two_pass
  .text.ph_remove_any_head
-                0x100020d0      0x128 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x100020d8      0x128 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_remove_head
-                0x100021f8       0x14 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x100021f8                ph_remove_head
+                0x10002200       0x14 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10002200                ph_remove_head
  .text.ph_remove_and_free_node
-                0x1000220c       0xf8 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x1000220c                ph_remove_and_free_node
+                0x10002214       0xf8 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10002214                ph_remove_and_free_node
  .text.clock_configure
-                0x10002304      0x104 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x10002304                clock_configure
+                0x1000230c      0x104 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x1000230c                clock_configure
  .text.clocks_init
-                0x10002408      0x100 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x10002408                clocks_init
+                0x10002410      0x100 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x10002410                clocks_init
  .text.clock_get_hz
-                0x10002508        0xc CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x10002508                clock_get_hz
+                0x10002510        0xc CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x10002510                clock_get_hz
  .text.pll_init
-                0x10002514      0x12c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
-                0x10002514                pll_init
+                0x1000251c      0x12c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                0x1000251c                pll_init
  .text.watchdog_start_tick
-                0x10002640       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                0x10002640                watchdog_start_tick
+                0x10002648       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x10002648                watchdog_start_tick
  .text.xosc_init
-                0x10002650       0x28 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
-                0x10002650                xosc_init
- .text._exit    0x10002678        0x4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10002678                _exit
- .text.exit     0x1000267c        0x6 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x1000267c                exit
- *fill*         0x10002682        0x2 
+                0x10002658       0x28 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+                0x10002658                xosc_init
+ .text._exit    0x10002680        0x4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10002680                _exit
+ .text.exit     0x10002684        0x6 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10002684                exit
+ *fill*         0x1000268a        0x2 
  .text.__assert_func
-                0x10002684       0x3c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10002684                __assert_func
+                0x1000268c       0x3c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x1000268c                __assert_func
  .text.runtime_init
-                0x100026c0       0xf8 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x100026c0                runtime_init
- .text.panic    0x100027b8       0x30 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x100027b8                panic
+                0x100026c8       0xf8 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x100026c8                runtime_init
+ .text.panic    0x100027c0       0x30 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x100027c0                panic
  .text._out_null
-                0x100027e8        0x2 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x100027f0        0x2 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_fct
-                0x100027ea        0xe CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._atoi    0x100027f8       0x24 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x100027f2        0xe CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._atoi    0x10002800       0x24 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_rev
-                0x1000281c       0xae CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10002824       0xae CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._ntoa_format
-                0x100028ca      0x112 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x100028d2      0x112 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._ntoa_long
-                0x100029dc       0xbc CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x100029e4       0xbc CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._ntoa_long_long
-                0x10002a98       0xe2 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- *fill*         0x10002b7a        0x2 
- .text._etoa    0x10002b7c      0x414 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._ftoa    0x10002f90      0x354 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10002aa0       0xe2 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ *fill*         0x10002b82        0x2 
+ .text._etoa    0x10002b84      0x414 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._ftoa    0x10002f98      0x354 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._vsnprintf
-                0x100032e4      0x624 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x100032ec      0x624 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text.vfctprintf
-                0x10003908       0x20 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x10003908                vfctprintf
- .text          0x10003928       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x10003910       0x20 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10003910                vfctprintf
+ .text          0x10003930       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .text.rom_func_lookup
-                0x10003938       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x10003938                rom_func_lookup
+                0x10003940       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x10003940                rom_func_lookup
  .text.rom_data_lookup
-                0x10003948       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x10003948                rom_data_lookup
+                0x10003950       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x10003950                rom_data_lookup
  .text.rom_funcs_lookup
-                0x10003958       0x36 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x10003958                rom_funcs_lookup
- *fill*         0x1000398e        0x2 
+                0x10003960       0x36 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x10003960                rom_funcs_lookup
+ *fill*         0x10003996        0x2 
  .text.__wrap___aeabi_idiv
-                0x10003990       0x50 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x10003990                __wrap___aeabi_idivmod
-                0x10003990                divmod_s32s32
-                0x10003990                div_s32s32
-                0x10003990                __wrap___aeabi_idiv
-                0x10003998                divmod_s32s32_unsafe
-                0x100039c4                divmod_s32s32_savestate
+                0x10003998       0x50 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x10003998                __wrap___aeabi_idivmod
+                0x10003998                divmod_s32s32
+                0x10003998                div_s32s32
+                0x10003998                __wrap___aeabi_idiv
+                0x100039a0                divmod_s32s32_unsafe
+                0x100039cc                divmod_s32s32_savestate
  .text.__wrap___aeabi_uidiv
-                0x100039e0       0x4c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x100039e0                __wrap___aeabi_uidiv
-                0x100039e0                __wrap___aeabi_uidivmod
-                0x100039e0                div_u32u32
-                0x100039e0                divmod_u32u32
-                0x100039e8                divmod_u32u32_unsafe
-                0x10003a10                divmod_u32u32_savestate
+                0x100039e8       0x4c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x100039e8                __wrap___aeabi_uidiv
+                0x100039e8                __wrap___aeabi_uidivmod
+                0x100039e8                div_u32u32
+                0x100039e8                divmod_u32u32
+                0x100039f0                divmod_u32u32_unsafe
+                0x10003a18                divmod_u32u32_savestate
  .text.__wrap___aeabi_ldiv
-                0x10003a2c      0x424 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x10003a2c                div_s64s64
-                0x10003a2c                divmod_s64s64
-                0x10003a2c                __wrap___aeabi_ldivmod
-                0x10003a5c                divmod_u64u64
-                0x10003a5c                div_u64u64
-                0x10003a5c                __wrap___aeabi_uldivmod
-                0x10003a6c                divmod_u64u64_savestate
-                0x10003a8c                divmod_s64s64_unsafe
-                0x10003b14                divmod_u64u64_unsafe
+                0x10003a34      0x424 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x10003a34                div_s64s64
+                0x10003a34                divmod_s64s64
+                0x10003a34                __wrap___aeabi_ldivmod
+                0x10003a64                divmod_u64u64
+                0x10003a64                div_u64u64
+                0x10003a64                __wrap___aeabi_uldivmod
+                0x10003a74                divmod_u64u64_savestate
+                0x10003a94                divmod_s64s64_unsafe
+                0x10003b1c                divmod_u64u64_unsafe
  .text.__wrap___aeabi_darithmetic
-                0x10003e50       0x80 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003e50                __wrap___aeabi_drsub
-                0x10003e56                __wrap___aeabi_dsub
-                0x10003e68                __wrap___aeabi_dadd
-                0x10003e7a                __wrap___aeabi_ddiv
-                0x10003eb6                __wrap___aeabi_dmul
+                0x10003e58       0x80 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003e58                __wrap___aeabi_drsub
+                0x10003e5e                __wrap___aeabi_dsub
+                0x10003e70                __wrap___aeabi_dadd
+                0x10003e82                __wrap___aeabi_ddiv
+                0x10003ebe                __wrap___aeabi_dmul
  .text.__wrap___aeabi_cdcmple
-                0x10003ed0       0x6c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003ed0                __wrap___aeabi_cdrcmple
-                0x10003ee0                __wrap___aeabi_cdcmpeq
-                0x10003ee0                __wrap___aeabi_cdcmple
+                0x10003ed8       0x6c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003ed8                __wrap___aeabi_cdrcmple
+                0x10003ee8                __wrap___aeabi_cdcmpeq
+                0x10003ee8                __wrap___aeabi_cdcmple
  .text.__wrap___aeabi_dcmplt
-                0x10003f3c        0xc CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003f3c                __wrap___aeabi_dcmplt
+                0x10003f44        0xc CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003f44                __wrap___aeabi_dcmplt
  .text.__wrap___aeabi_dcmple
-                0x10003f48       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003f48                __wrap___aeabi_dcmple
+                0x10003f50       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003f50                __wrap___aeabi_dcmple
  .text.__wrap___aeabi_dcmpge
-                0x10003f58       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003f58                __wrap___aeabi_dcmpge
+                0x10003f60       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003f60                __wrap___aeabi_dcmpge
  .text.__wrap___aeabi_dcmpgt
-                0x10003f68        0xa CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003f68                __wrap___aeabi_dcmpgt
+                0x10003f70        0xa CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003f70                __wrap___aeabi_dcmpgt
  .text.__wrap___aeabi_dcmpun
-                0x10003f72       0x1c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003f72                __wrap___aeabi_dcmpun
- *fill*         0x10003f8e        0x2 
+                0x10003f7a       0x1c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003f7a                __wrap___aeabi_dcmpun
+ *fill*         0x10003f96        0x2 
  .text.__wrap___aeabi_i2d
-                0x10003f90       0x38 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003f90                __wrap___aeabi_ui2d
-                0x10003f98                __wrap___aeabi_i2d
+                0x10003f98       0x38 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003f98                __wrap___aeabi_ui2d
+                0x10003fa0                __wrap___aeabi_i2d
  .text.__wrap___aeabi_d2iz
-                0x10003fc8       0x48 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003fc8                double2int_z
-                0x10003fc8                __wrap___aeabi_d2iz
+                0x10003fd0       0x48 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003fd0                double2int_z
+                0x10003fd0                __wrap___aeabi_d2iz
  .text.__wrap___aeabi_d2uiz
-                0x10004010       0x18 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10004010                __wrap___aeabi_d2uiz
-                0x10004010                double2uint
+                0x10004018       0x18 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10004018                __wrap___aeabi_d2uiz
+                0x10004018                double2uint
  .text.__aeabi_double_init
-                0x10004028       0xc8 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x10004028                __aeabi_double_init
+                0x10004030       0xc8 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x10004030                __aeabi_double_init
  .text.double_table_shim_on_use_helper
-                0x100040f0       0x34 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x100040f0                double_table_shim_on_use_helper
+                0x100040f8       0x34 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x100040f8                double_table_shim_on_use_helper
  .text.__wrap___aeabi_dsub
-                0x10004124       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10004124                drsub_shim
-                0x1000412a                dsub_shim
+                0x1000412c       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x1000412c                drsub_shim
+                0x10004132                dsub_shim
  .text.dadd_shim
-                0x10004134      0x15c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10004134                dadd_shim
+                0x1000413c      0x15c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x1000413c                dadd_shim
  .text.dmul_shim
-                0x10004290      0x15c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10004290                dmul_shim
+                0x10004298      0x15c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10004298                dmul_shim
  .text.ddiv_shim
-                0x100043ec      0x1b0 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x100043ec                ddiv_shim
+                0x100043f4      0x1b0 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x100043f4                ddiv_shim
  .text.double2uint_shim
-                0x1000459c        0xe CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x1000459c                double2uint_shim
-                0x1000459e                double2ufix_shim
- *fill*         0x100045aa        0x2 
+                0x100045a4        0xe CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x100045a4                double2uint_shim
+                0x100045a6                double2ufix_shim
+ *fill*         0x100045b2        0x2 
  .text.double2uint64_shim
-                0x100045ac       0x70 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x100045ac                double2uint64_shim
-                0x100045ae                double2ufix64_shim
-                0x100045ce                d2fix_a
+                0x100045b4       0x70 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x100045b4                double2uint64_shim
+                0x100045b6                double2ufix64_shim
+                0x100045d6                d2fix_a
  .text.dunpacks
-                0x1000461c       0x3c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x1000461c                dunpacks
+                0x10004624       0x3c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10004624                dunpacks
  .text.__aeabi_lmul
-                0x10004658       0x32 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
-                0x10004658                __wrap___aeabi_lmul
- *fill*         0x1000468a        0x2 
+                0x10004660       0x32 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+                0x10004660                __wrap___aeabi_lmul
+ *fill*         0x10004692        0x2 
  .text.__aeabi_float_init
-                0x1000468c       0xfc CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-                0x1000468c                __aeabi_float_init
+                0x10004694       0xfc CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x10004694                __aeabi_float_init
  .text.float_table_shim_on_use_helper
-                0x10004788       0x34 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
-                0x10004788                float_table_shim_on_use_helper
- .text          0x100047bc       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x100047bc                __aeabi_mem_init
- .text.memset   0x100047cc        0xc CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x100047cc                __wrap_memset
- .text.memcpy   0x100047d8        0xc CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x100047d8                __wrap_memcpy
-                0x100047d8                __wrap___aeabi_memcpy
+                0x10004790       0x34 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+                0x10004790                float_table_shim_on_use_helper
+ .text          0x100047c4       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x100047c4                __aeabi_mem_init
+ .text.memset   0x100047d4        0xc CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x100047d4                __wrap_memset
+ .text.memcpy   0x100047e0        0xc CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x100047e0                __wrap_memcpy
+                0x100047e0                __wrap___aeabi_memcpy
  .text.stdio_out_chars_no_crlf
-                0x100047e4        0xe CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- *fill*         0x100047f2        0x2 
+                0x100047ec        0xe CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ *fill*         0x100047fa        0x2 
  .text.stdio_out_chars_crlf
-                0x100047f4       0x80 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x100047fc       0x80 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_stack_buffer_flush
-                0x10004874       0x44 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x1000487c       0x44 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_buffered_printer
-                0x100048b8       0x20 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x100048c0       0x20 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdout_serialize_begin
-                0x100048d8       0x5c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x100048d8                stdout_serialize_begin
+                0x100048e0       0x5c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x100048e0                stdout_serialize_begin
  .text.stdout_serialize_end
-                0x10004934       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10004934                stdout_serialize_end
+                0x1000493c       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x1000493c                stdout_serialize_end
  .text.stdio_put_string
-                0x10004944       0x98 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x1000494c       0x98 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_flush
-                0x100049dc       0x20 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x100049dc                stdio_flush
+                0x100049e4       0x20 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x100049e4                stdio_flush
  .text.__wrap_puts
-                0x100049fc       0x1e CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x100049fc                __wrap_puts
- *fill*         0x10004a1a        0x2 
+                0x10004a04       0x1e CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004a04                __wrap_puts
+ *fill*         0x10004a22        0x2 
  .text.__wrap_vprintf
-                0x10004a1c       0x40 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10004a1c                __wrap_vprintf
+                0x10004a24       0x40 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004a24                __wrap_vprintf
  .text.__wrap_printf
-                0x10004a5c       0x18 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10004a5c                __wrap_printf
+                0x10004a64       0x18 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004a64                __wrap_printf
  .text.spi_set_baudrate
-                0x10004a74       0x92 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
-                0x10004a74                spi_set_baudrate
- *fill*         0x10004b06        0x2 
+                0x10004a7c       0x92 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
+                0x10004a7c                spi_set_baudrate
+ *fill*         0x10004b0e        0x2 
  .text.spi_init
-                0x10004b08       0x68 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
-                0x10004b08                spi_init
+                0x10004b10       0x68 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
+                0x10004b10                spi_init
  .text.hw_endpoint_get_by_addr
-                0x10004b70       0x18 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x10004b78       0x18 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .text._hw_endpoint_alloc
-                0x10004b88       0x70 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x10004b90       0x70 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .text.hw_endpoint_init
-                0x10004bf8       0x88 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x10004c00       0x88 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .text.hw_endpoint_xfer
-                0x10004c80       0x14 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x10004c88       0x14 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .text.dcd_int_enable
-                0x10004c94       0x2c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x10004c94                dcd_int_enable
+                0x10004c9c       0x2c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x10004c9c                dcd_int_enable
  .text.dcd_set_address
-                0x10004cc0       0x2c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x10004cc0                dcd_set_address
+                0x10004cc8       0x2c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x10004cc8                dcd_set_address
  .text.dcd_remote_wakeup
-                0x10004cec       0x38 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x10004cec                dcd_remote_wakeup
+                0x10004cf4       0x38 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x10004cf4                dcd_remote_wakeup
  .text.dcd_connect
-                0x10004d24       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x10004d24                dcd_connect
+                0x10004d2c       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x10004d2c                dcd_connect
  .text.dcd_init
-                0x10004d34       0x80 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x10004d34                dcd_init
+                0x10004d3c       0x80 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x10004d3c                dcd_init
  .text.dcd_edpt0_status_complete
-                0x10004db4       0x1c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x10004db4                dcd_edpt0_status_complete
+                0x10004dbc       0x1c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x10004dbc                dcd_edpt0_status_complete
  .text.dcd_edpt_open
-                0x10004dd0       0x40 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x10004dd0                dcd_edpt_open
+                0x10004dd8       0x40 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x10004dd8                dcd_edpt_open
  .text.dcd_edpt_close_all
-                0x10004e10        0x8 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x10004e10                dcd_edpt_close_all
+                0x10004e18        0x8 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x10004e18                dcd_edpt_close_all
  .text.dcd_edpt_xfer
-                0x10004e18       0x34 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x10004e18                dcd_edpt_xfer
+                0x10004e20       0x34 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x10004e20                dcd_edpt_xfer
  .text.dcd_edpt_stall
-                0x10004e4c       0x2c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x10004e4c                dcd_edpt_stall
+                0x10004e54       0x2c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x10004e54                dcd_edpt_stall
  .text.dcd_edpt_clear_stall
-                0x10004e78       0x20 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x10004e78                dcd_edpt_clear_stall
+                0x10004e80       0x20 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x10004e80                dcd_edpt_clear_stall
  .text.rp2040_usb_init
-                0x10004e98       0x4c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x10004e98                rp2040_usb_init
+                0x10004ea0       0x4c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x10004ea0                rp2040_usb_init
  .text.hw_endpoint_xfer_start
-                0x10004ee4       0x50 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x10004ee4                hw_endpoint_xfer_start
+                0x10004eec       0x50 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x10004eec                hw_endpoint_xfer_start
  .text.configuration_reset
-                0x10004f34       0x84 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x10004f3c       0x84 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .text.usbd_reset
-                0x10004fb8        0xc CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x10004fc0        0xc CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .text.invoke_class_control
-                0x10004fc4       0x1a CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
- *fill*         0x10004fde        0x2 
+                0x10004fcc       0x1a CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+ *fill*         0x10004fe6        0x2 
  .text.process_set_config
-                0x10004fe0      0x15c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x10004fe8      0x15c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .text.process_get_descriptor
-                0x1000513c       0xdc CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x10005144       0xdc CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .text.tud_mounted
-                0x10005218       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x10005218                tud_mounted
+                0x10005220       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x10005220                tud_mounted
  .text.tud_suspended
-                0x10005228       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x10005228                tud_suspended
+                0x10005230       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x10005230                tud_suspended
  .text.tud_remote_wakeup
-                0x10005238       0x34 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x10005238                tud_remote_wakeup
+                0x10005240       0x34 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x10005240                tud_remote_wakeup
  .text.tud_inited
-                0x1000526c       0x14 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x1000526c                tud_inited
+                0x10005274       0x14 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x10005274                tud_inited
  .text.tud_init
-                0x10005280       0xcc CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x10005280                tud_init
+                0x10005288       0xcc CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x10005288                tud_init
  .text.usbd_edpt_open
-                0x1000534c       0x34 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x1000534c                usbd_edpt_open
+                0x10005354       0x34 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x10005354                usbd_edpt_open
  .text.usbd_open_edpt_pair
-                0x10005380       0x62 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x10005380                usbd_open_edpt_pair
- *fill*         0x100053e2        0x2 
+                0x10005388       0x62 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x10005388                usbd_open_edpt_pair
+ *fill*         0x100053ea        0x2 
  .text.usbd_edpt_claim
-                0x100053e4       0x28 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x100053e4                usbd_edpt_claim
+                0x100053ec       0x28 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x100053ec                usbd_edpt_claim
  .text.usbd_edpt_xfer
-                0x1000540c       0x78 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x1000540c                usbd_edpt_xfer
+                0x10005414       0x78 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x10005414                usbd_edpt_xfer
  .text.usbd_edpt_busy
-                0x10005484       0x1c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x10005484                usbd_edpt_busy
+                0x1000548c       0x1c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x1000548c                usbd_edpt_busy
  .text.usbd_edpt_stall
-                0x100054a0       0x48 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x100054a0                usbd_edpt_stall
+                0x100054a8       0x48 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x100054a8                usbd_edpt_stall
  .text.usbd_edpt_clear_stall
-                0x100054e8       0x48 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x100054e8                usbd_edpt_clear_stall
+                0x100054f0       0x48 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x100054f0                usbd_edpt_clear_stall
  .text.usbd_edpt_stalled
-                0x10005530       0x1c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x10005530                usbd_edpt_stalled
+                0x10005538       0x1c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x10005538                usbd_edpt_stalled
  .text.process_control_request
-                0x1000554c      0x37c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x10005554      0x37c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .text.tud_task_ext
-                0x100058c8      0x1b4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x100058c8                tud_task_ext
+                0x100058d0      0x1b4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x100058d0                tud_task_ext
  .text._data_stage_xact
-                0x10005a7c       0x58 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x10005a84       0x58 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
  .text.tud_control_status
-                0x10005ad4       0x38 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x10005ad4                tud_control_status
+                0x10005adc       0x38 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x10005adc                tud_control_status
  .text.tud_control_xfer
-                0x10005b0c       0x74 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x10005b0c                tud_control_xfer
+                0x10005b14       0x74 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x10005b14                tud_control_xfer
  .text.usbd_control_reset
-                0x10005b80       0x14 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x10005b80                usbd_control_reset
+                0x10005b88       0x14 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x10005b88                usbd_control_reset
  .text.usbd_control_set_complete_callback
-                0x10005b94        0xc CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x10005b94                usbd_control_set_complete_callback
+                0x10005b9c        0xc CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x10005b9c                usbd_control_set_complete_callback
  .text.usbd_control_set_request
-                0x10005ba0       0x1c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x10005ba0                usbd_control_set_request
+                0x10005ba8       0x1c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x10005ba8                usbd_control_set_request
  .text.usbd_control_xfer_cb
-                0x10005bbc       0xcc CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x10005bbc                usbd_control_xfer_cb
+                0x10005bc4       0xcc CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x10005bc4                usbd_control_xfer_cb
  .text.tud_hid_n_ready
-                0x10005c88       0x50 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
-                0x10005c88                tud_hid_n_ready
+                0x10005c90       0x50 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
+                0x10005c90                tud_hid_n_ready
  .text.tud_hid_n_report
-                0x10005cd8       0x84 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
-                0x10005cd8                tud_hid_n_report
+                0x10005ce0       0x84 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
+                0x10005ce0                tud_hid_n_report
  .text.tud_hid_n_mouse_report
-                0x10005d5c       0x2e CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
-                0x10005d5c                tud_hid_n_mouse_report
- *fill*         0x10005d8a        0x2 
+                0x10005d64       0x2e CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
+                0x10005d64                tud_hid_n_mouse_report
+ *fill*         0x10005d92        0x2 
  .text.hidd_reset
-                0x10005d8c       0x14 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
-                0x10005d8c                hidd_reset
+                0x10005d94       0x14 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
+                0x10005d94                hidd_reset
  .text.hidd_init
-                0x10005da0        0xa CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
-                0x10005da0                hidd_init
- *fill*         0x10005daa        0x2 
+                0x10005da8        0xa CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
+                0x10005da8                hidd_init
+ *fill*         0x10005db2        0x2 
  .text.hidd_open
-                0x10005dac       0xbc CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
-                0x10005dac                hidd_open
+                0x10005db4       0xbc CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
+                0x10005db4                hidd_open
  .text.hidd_control_xfer_cb
-                0x10005e68      0x278 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
-                0x10005e68                hidd_control_xfer_cb
+                0x10005e70      0x278 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
+                0x10005e70                hidd_control_xfer_cb
  .text.hidd_xfer_cb
-                0x100060e0       0x84 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
-                0x100060e0                hidd_xfer_cb
+                0x100060e8       0x84 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
+                0x100060e8                hidd_xfer_cb
  .text.tusb_init
-                0x10006164        0xa CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x10006164                tusb_init
+                0x1000616c        0xa CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x1000616c                tusb_init
  .text.tusb_inited
-                0x1000616e        0xe CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x1000616e                tusb_inited
+                0x10006176        0xe CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x10006176                tusb_inited
  .text.tu_edpt_claim
-                0x1000617c       0x50 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x1000617c                tu_edpt_claim
+                0x10006184       0x50 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x10006184                tu_edpt_claim
  .text.tu_edpt_validate
-                0x100061cc       0x78 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x100061cc                tu_edpt_validate
+                0x100061d4       0x78 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x100061d4                tu_edpt_validate
  .text.tu_edpt_bind_driver
-                0x10006244       0x26 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x10006244                tu_edpt_bind_driver
+                0x1000624c       0x26 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x1000624c                tu_edpt_bind_driver
  .text.advance_index
-                0x1000626a       0x1a CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x10006272       0x1a CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
  .text._tu_fifo_peek
-                0x10006284       0x56 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x1000628c       0x56 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
  .text.tu_fifo_full
-                0x100062da       0x28 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x100062da                tu_fifo_full
+                0x100062e2       0x28 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x100062e2                tu_fifo_full
  .text.tu_fifo_read
-                0x10006302       0x42 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x10006302                tu_fifo_read
+                0x1000630a       0x42 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x1000630a                tu_fifo_read
  .text.tu_fifo_write
-                0x10006344       0x64 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x10006344                tu_fifo_write
+                0x1000634c       0x64 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x1000634c                tu_fifo_write
  .text.tu_fifo_clear
-                0x100063a8       0x3e CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x100063a8                tu_fifo_clear
- *fill*         0x100063e6        0x2 
- .text.strlen   0x100063e8       0x5c c:/progra~1/raspbe~1/picosd~1.0/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg.a(lib_a-strlen-stub.o)
-                0x100063e8                strlen
+                0x100063b0       0x3e CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x100063b0                tu_fifo_clear
+ *fill*         0x100063ee        0x2 
+ .text.strlen   0x100063f0       0x5c c:/progra~1/raspbe~1/picosd~1.0/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg.a(lib_a-strlen-stub.o)
+                0x100063f0                strlen
  *(.fini)
- .fini          0x10006444        0x4 c:/progra~1/raspbe~1/picosd~1.0/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
-                0x10006444                _fini
- .fini.__stub   0x10006448       0xd0 linker stubs
+ .fini          0x1000644c        0x4 c:/progra~1/raspbe~1/picosd~1.0/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+                0x1000644c                _fini
+ .fini.__stub   0x10006450       0xd0 linker stubs
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -2417,326 +2417,326 @@ LOAD c:/progra~1/raspbe~1/picosd~1.0/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
  *(.eh_frame*)
- .eh_frame      0x10006518        0x0 c:/progra~1/raspbe~1/picosd~1.0/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x10006518                . = ALIGN (0x4)
+ .eh_frame      0x10006520        0x0 c:/progra~1/raspbe~1/picosd~1.0/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x10006520                . = ALIGN (0x4)
 
-.glue_7         0x10006518        0x0
- .glue_7        0x10006518        0x0 linker stubs
+.glue_7         0x10006520        0x0
+ .glue_7        0x10006520        0x0 linker stubs
 
-.glue_7t        0x10006518        0x0
- .glue_7t       0x10006518        0x0 linker stubs
+.glue_7t        0x10006520        0x0
+ .glue_7t       0x10006520        0x0 linker stubs
 
-.vfp11_veneer   0x10006518        0x0
- .vfp11_veneer  0x10006518        0x0 linker stubs
+.vfp11_veneer   0x10006520        0x0
+ .vfp11_veneer  0x10006520        0x0 linker stubs
 
-.v4_bx          0x10006518        0x0
- .v4_bx         0x10006518        0x0 linker stubs
+.v4_bx          0x10006520        0x0
+ .v4_bx         0x10006520        0x0 linker stubs
 
-.iplt           0x10006518        0x0
- .iplt          0x10006518        0x0 c:/progra~1/raspbe~1/picosd~1.0/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x10006520        0x0
+ .iplt          0x10006520        0x0 c:/progra~1/raspbe~1/picosd~1.0/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x10006518     0x24a4
+.rodata         0x10006520     0x24a4
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
  .rodata.buttons_getMask.str1.4
-                0x10006518       0x7d CMakeFiles/pico-mouse.dir/main.c.obj
- *fill*         0x10006595        0x3 
+                0x10006520       0x7d CMakeFiles/pico-mouse.dir/main.c.obj
+ *fill*         0x1000659d        0x3 
  .rodata.__func__.2
-                0x10006598       0x15 CMakeFiles/pico-mouse.dir/main.c.obj
- *fill*         0x100065ad        0x3 
+                0x100065a0       0x15 CMakeFiles/pico-mouse.dir/main.c.obj
+ *fill*         0x100065b5        0x3 
  .rodata.str1.4
-                0x100065b0       0x1f CMakeFiles/pico-mouse.dir/usb_descriptors.c.obj
- *fill*         0x100065cf        0x1 
+                0x100065b8       0x1f CMakeFiles/pico-mouse.dir/usb_descriptors.c.obj
+ *fill*         0x100065d7        0x1 
  .rodata.__compound_literal.0
-                0x100065d0        0x2 CMakeFiles/pico-mouse.dir/usb_descriptors.c.obj
- *fill*         0x100065d2        0x2 
+                0x100065d8        0x2 CMakeFiles/pico-mouse.dir/usb_descriptors.c.obj
+ *fill*         0x100065da        0x2 
  .rodata.desc_configuration
-                0x100065d4       0x22 CMakeFiles/pico-mouse.dir/usb_descriptors.c.obj
-                0x100065d4                desc_configuration
- *fill*         0x100065f6        0x2 
+                0x100065dc       0x22 CMakeFiles/pico-mouse.dir/usb_descriptors.c.obj
+                0x100065dc                desc_configuration
+ *fill*         0x100065fe        0x2 
  .rodata.desc_device
-                0x100065f8       0x12 CMakeFiles/pico-mouse.dir/usb_descriptors.c.obj
-                0x100065f8                desc_device
- *fill*         0x1000660a        0x2 
+                0x10006600       0x12 CMakeFiles/pico-mouse.dir/usb_descriptors.c.obj
+                0x10006600                desc_device
+ *fill*         0x10006612        0x2 
  .rodata.desc_hid_report
-                0x1000660c       0x4f CMakeFiles/pico-mouse.dir/usb_descriptors.c.obj
-                0x1000660c                desc_hid_report
- *fill*         0x1000665b        0x1 
+                0x10006614       0x4f CMakeFiles/pico-mouse.dir/usb_descriptors.c.obj
+                0x10006614                desc_hid_report
+ *fill*         0x10006663        0x1 
  .rodata.PMW3360_firmware
-                0x1000665c      0xffe CMakeFiles/pico-mouse.dir/C_/Users/Brent/Documents/GitHub/PMW3360-Firmware/src/PMW3360.c.obj
- *fill*         0x1000765a        0x2 
+                0x10006664      0xffe CMakeFiles/pico-mouse.dir/C_/Users/Brent/Documents/GitHub/PMW3360-Firmware/src/PMW3360.c.obj
+ *fill*         0x10007662        0x2 
  .rodata.spin_lock_claim_unused.str1.4
-                0x1000765c       0x1b CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- *fill*         0x10007677        0x1 
+                0x10007664       0x1b CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ *fill*         0x1000767f        0x1 
  .rodata.make_branch.str1.4
-                0x10007678       0x89 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x10007701        0x3 
+                0x10007680       0x89 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x10007709        0x3 
  .rodata.insert_branch_and_link.str1.4
-                0x10007704       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x1000770c       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .rodata.irq_set_exclusive_handler.str1.4
-                0x10007714       0x36 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x1000774a        0x2 
+                0x1000771c       0x36 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x10007752        0x2 
  .rodata.irq_add_shared_handler.str1.4
-                0x1000774c       0xd9 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x10007825        0x3 
+                0x10007754       0xd9 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x1000782d        0x3 
  .rodata.irq_remove_handler.str1.4
-                0x10007828       0x3a CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x10007862        0x2 
+                0x10007830       0x3a CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x1000786a        0x2 
  .rodata.irq_add_tail_to_free_list.str1.4
-                0x10007864       0x3a CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x1000789e        0x2 
+                0x1000786c       0x3a CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x100078a6        0x2 
  .rodata.__func__.0
-                0x100078a0       0x1a CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x100078ba        0x2 
+                0x100078a8       0x1a CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x100078c2        0x2 
  .rodata.__func__.1
-                0x100078bc       0x17 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x100078d3        0x1 
+                0x100078c4       0x17 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x100078db        0x1 
  .rodata.__func__.2
-                0x100078d4       0x13 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x100078e7        0x1 
+                0x100078dc       0x13 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x100078ef        0x1 
  .rodata.__func__.3
-                0x100078e8        0xc CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x100078f0        0xc CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .rodata.__func__.4
-                0x100078f4        0xf CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x10007903        0x1 
+                0x100078fc        0xf CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x1000790b        0x1 
  .rodata.__func__.5
-                0x10007904       0x17 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x1000791b        0x1 
+                0x1000790c       0x17 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x10007923        0x1 
  .rodata.__func__.6
-                0x1000791c       0x1a CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x10007936        0x2 
+                0x10007924       0x1a CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x1000793e        0x2 
  .rodata.str1.4
-                0x10007938       0xa5 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x10007940       0xa5 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_sync/mutex.c.obj
                                 0x125 (size before relaxing)
- *fill*         0x100079dd        0x3 
+ *fill*         0x100079e5        0x3 
  .rodata.__func__.1
-                0x100079e0        0xb CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_sync/mutex.c.obj
- *fill*         0x100079eb        0x1 
+                0x100079e8        0xb CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_sync/mutex.c.obj
+ *fill*         0x100079f3        0x1 
  .rodata.__func__.3
-                0x100079ec       0x18 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x100079f4       0x18 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_sync/mutex.c.obj
  .rodata.__func__.4
-                0x10007a04       0x15 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_sync/mutex.c.obj
- *fill*         0x10007a19        0x3 
+                0x10007a0c       0x15 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_sync/mutex.c.obj
+ *fill*         0x10007a21        0x3 
  .rodata.repeating_timer_callback.str1.4
-                0x10007a1c       0x67 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10007a83        0x1 
+                0x10007a24       0x67 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10007a8b        0x1 
  .rodata.timer_pool_entry_comparator.str1.4
-                0x10007a84       0x22 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10007aa6        0x2 
+                0x10007a8c       0x22 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10007aae        0x2 
  .rodata.ph_add_child_node.str1.4
-                0x10007aa8       0xb2 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10007b5a        0x2 
+                0x10007ab0       0xb2 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10007b62        0x2 
  .rodata.add_alarm_under_lock.str1.4
-                0x10007b5c       0x28 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
+                0x10007b64       0x28 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
                                  0x2b (size before relaxing)
  .rodata.alarm_pool_alarm_callback.str1.4
-                0x10007b84       0x98 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
+                0x10007b8c       0x98 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
                                 0x118 (size before relaxing)
  .rodata.alarm_pool_get_default.str1.4
-                0x10007c1c       0x21 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10007c3d        0x3 
+                0x10007c24       0x21 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10007c45        0x3 
  .rodata.alarm_pool_cancel_alarm.str1.4
-                0x10007c40       0x27 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10007c67        0x1 
+                0x10007c48       0x27 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10007c6f        0x1 
  .rodata.sleep_until.str1.4
-                0x10007c68       0x4d CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10007cb5        0x3 
+                0x10007c70       0x4d CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10007cbd        0x3 
  .rodata.__func__.1
-                0x10007cb8       0x18 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
+                0x10007cc0       0x18 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
  .rodata.__func__.10
-                0x10007cd0       0x15 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10007ce5        0x3 
+                0x10007cd8       0x15 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10007ced        0x3 
  .rodata.__func__.11
-                0x10007ce8       0x1a CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10007d02        0x2 
+                0x10007cf0       0x1a CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10007d0a        0x2 
  .rodata.__func__.12
-                0x10007d04        0xa CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10007d0e        0x2 
+                0x10007d0c        0xa CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10007d16        0x2 
  .rodata.__func__.3
-                0x10007d10       0x17 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10007d27        0x1 
+                0x10007d18       0x17 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10007d2f        0x1 
  .rodata.__func__.4
-                0x10007d28       0x12 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10007d3a        0x2 
+                0x10007d30       0x12 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10007d42        0x2 
  .rodata.__func__.5
-                0x10007d3c        0xd CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10007d49        0x3 
+                0x10007d44        0xd CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10007d51        0x3 
  .rodata.__func__.6
-                0x10007d4c       0x12 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10007d5e        0x2 
+                0x10007d54       0x12 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10007d66        0x2 
  .rodata.__func__.7
-                0x10007d60        0xf CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10007d6f        0x1 
+                0x10007d68        0xf CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10007d77        0x1 
  .rodata.__func__.8
-                0x10007d70        0xc CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
+                0x10007d78        0xc CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
  .rodata.__func__.9
-                0x10007d7c       0x15 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10007d91        0x3 
+                0x10007d84       0x15 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10007d99        0x3 
  .rodata.hardware_alarm_claim.str1.4
-                0x10007d94       0x22 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- *fill*         0x10007db6        0x2 
+                0x10007d9c       0x22 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ *fill*         0x10007dbe        0x2 
  .rodata.hardware_alarm_set_target.str1.4
-                0x10007db8       0x81 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- *fill*         0x10007e39        0x3 
+                0x10007dc0       0x81 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ *fill*         0x10007e41        0x3 
  .rodata.__func__.0
-                0x10007e3c       0x1a CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10007e44       0x1a CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .rodata.ph_add_child_node.str1.4
-                0x10007e56       0xb2 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_util/pheap.c.obj
- *fill*         0x10007e56        0x2 
+                0x10007e5e       0xb2 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_util/pheap.c.obj
+ *fill*         0x10007e5e        0x2 
  .rodata.ph_remove_any_head.str1.4
-                0x10007e58       0xa8 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10007e60       0xa8 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_util/pheap.c.obj
                                  0xbc (size before relaxing)
  .rodata.ph_remove_and_free_node.str1.4
-                0x10007f00       0x1e CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10007f08       0x1e CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_util/pheap.c.obj
                                  0x26 (size before relaxing)
- *fill*         0x10007f1e        0x2 
+ *fill*         0x10007f26        0x2 
  .rodata.__func__.0
-                0x10007f20       0x18 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10007f28       0x18 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_util/pheap.c.obj
  .rodata.__func__.1
-                0x10007f38       0x13 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_util/pheap.c.obj
- *fill*         0x10007f4b        0x1 
+                0x10007f40       0x13 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_util/pheap.c.obj
+ *fill*         0x10007f53        0x1 
  .rodata.__func__.2
-                0x10007f4c       0x12 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_util/pheap.c.obj
- *fill*         0x10007f5e        0x2 
+                0x10007f54       0x12 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_util/pheap.c.obj
+ *fill*         0x10007f66        0x2 
  .rodata.__func__.3
-                0x10007f60        0xc CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10007f68        0xc CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_util/pheap.c.obj
  .rodata.clock_configure.str1.4
-                0x10007f6c       0x73 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- *fill*         0x10007fdf        0x1 
+                0x10007f74       0x73 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ *fill*         0x10007fe7        0x1 
  .rodata.__func__.1
-                0x10007fe0       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x10007fe8       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
  .rodata.pll_init.str1.4
-                0x10007ff0      0x13f CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- *fill*         0x1000812f        0x1 
+                0x10007ff8      0x13f CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ *fill*         0x10008137        0x1 
  .rodata.__func__.0
-                0x10008130        0x9 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- *fill*         0x10008139        0x3 
+                0x10008138        0x9 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ *fill*         0x10008141        0x3 
  .rodata.__assert_func.str1.4
-                0x1000813c       0x3f CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10008144       0x3f CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                                  0x43 (size before relaxing)
- *fill*         0x1000817b        0x1 
+ *fill*         0x10008183        0x1 
  .rodata.runtime_init.str1.4
-                0x1000817c       0x7d CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- *fill*         0x100081f9        0x3 
+                0x10008184       0x7d CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ *fill*         0x10008201        0x3 
  .rodata.panic.str1.4
-                0x100081fc       0x12 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- *fill*         0x1000820e        0x2 
+                0x10008204       0x12 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ *fill*         0x10008216        0x2 
  .rodata.__func__.2
-                0x10008210        0xd CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- *fill*         0x1000821d        0x3 
+                0x10008218        0xd CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ *fill*         0x10008225        0x3 
  .rodata._ftoa.str1.4
-                0x10008220       0x15 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- *fill*         0x10008235        0x3 
+                0x10008228       0x15 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ *fill*         0x1000823d        0x3 
  .rodata._vsnprintf
-                0x10008238      0x1e0 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10008240      0x1e0 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .rodata.pow10.0
-                0x10008418       0x50 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10008420       0x50 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .rodata.__aeabi_double_init.str1.4
-                0x10008468       0xc4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x10008470       0xc4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
  .rodata.__func__.0
-                0x1000852c       0x14 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x10008534       0x14 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
  .rodata.__aeabi_float_init.str1.4
-                0x10008540       0x96 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x10008548       0x96 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
                                  0x9a (size before relaxing)
- *fill*         0x100085d6        0x2 
+ *fill*         0x100085de        0x2 
  .rodata.__func__.0
-                0x100085d8       0x13 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- *fill*         0x100085eb        0x1 
+                0x100085e0       0x13 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ *fill*         0x100085f3        0x1 
  .rodata.str1.4
-                0x100085ec       0x40 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x100085f4       0x40 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_44
-                0x1000862c        0xc CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10008634        0xc CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_75
-                0x10008638        0xc CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10008640        0xc CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_81
-                0x10008644        0xc CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x1000864c        0xc CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.stdout_serialize_begin.str1.4
-                0x10008650       0x7d CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10008658       0x7d CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .rodata.__func__.3
-                0x10008650       0x15 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- *fill*         0x10008665        0x3 
+                0x10008658       0x15 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ *fill*         0x1000866d        0x3 
  .rodata.crlf_str.2
-                0x10008668        0x2 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- *fill*         0x1000866a        0x2 
+                0x10008670        0x2 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ *fill*         0x10008672        0x2 
  .rodata._hw_endpoint_alloc.str1.4
-                0x1000866c       0xd1 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
- *fill*         0x1000873d        0x3 
+                0x10008674       0xd1 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+ *fill*         0x10008745        0x3 
  .rodata.str1.4
-                0x10008740       0x14 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x10008748       0x14 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .rodata.dcd_int_enable.str1.4
-                0x10008754        0xc CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x1000875c        0xc CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .rodata.__func__.0
-                0x10008760        0xe CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
- *fill*         0x1000876e        0x2 
+                0x10008768        0xe CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+ *fill*         0x10008776        0x2 
  .rodata.__func__.1
-                0x10008770        0xe CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
- *fill*         0x1000877e        0x2 
+                0x10008778        0xe CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+ *fill*         0x10008786        0x2 
  .rodata.__func__.2
-                0x10008780       0x12 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
- *fill*         0x10008792        0x2 
+                0x10008788       0x12 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+ *fill*         0x1000879a        0x2 
  .rodata.__func__.3
-                0x10008794       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x1000879c       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .rodata.__func__.5
-                0x100087a4        0xf CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
- *fill*         0x100087b3        0x1 
+                0x100087ac        0xf CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+ *fill*         0x100087bb        0x1 
  .rodata.__func__.6
-                0x100087b4       0x13 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
- *fill*         0x100087c7        0x1 
+                0x100087bc       0x13 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+ *fill*         0x100087cf        0x1 
  .rodata.__func__.7
-                0x100087c8        0x9 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
- *fill*         0x100087d1        0x3 
+                0x100087d0        0x9 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+ *fill*         0x100087d9        0x3 
  .rodata.str1.4
-                0x100087d4      0x103 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- *fill*         0x100088d7        0x1 
+                0x100087dc      0x103 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ *fill*         0x100088df        0x1 
  .rodata.__func__.0
-                0x100088d8        0xf CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- *fill*         0x100088e7        0x1 
+                0x100088e0        0xf CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ *fill*         0x100088ef        0x1 
  .rodata.process_get_descriptor
-                0x100088e8       0x40 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x100088f0       0x40 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .rodata.process_control_request
-                0x10008928       0x28 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x10008930       0x28 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .rodata.tud_task_ext
-                0x10008950       0x24 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x10008958       0x24 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .rodata._usbd_driver
-                0x10008974       0x18 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x1000897c       0x18 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .rodata.hidd_control_xfer_cb
-                0x1000898c       0x30 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
-                0x100089bc                . = ALIGN (0x4)
+                0x10008994       0x30 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
+                0x100089c4                . = ALIGN (0x4)
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x100089bc                . = ALIGN (0x4)
+                0x100089c4                . = ALIGN (0x4)
 
-.rel.dyn        0x100089bc        0x0
- .rel.iplt      0x100089bc        0x0 c:/progra~1/raspbe~1/picosd~1.0/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+.rel.dyn        0x100089c4        0x0
+ .rel.iplt      0x100089c4        0x0 c:/progra~1/raspbe~1/picosd~1.0/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x100089bc                __exidx_start = .
+                0x100089c4                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x100089bc                __exidx_end = .
-                0x100089bc                . = ALIGN (0x4)
-                0x100089bc                __binary_info_start = .
+                0x100089c4                __exidx_end = .
+                0x100089c4                . = ALIGN (0x4)
+                0x100089c4                __binary_info_start = .
 
-.binary_info    0x100089bc       0x1c
+.binary_info    0x100089c4       0x1c
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr22
-                0x100089bc        0x4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr30
-                0x100089c0        0x4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr38
                 0x100089c4        0x4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr44
+ .binary_info.keep.__bi_ptr30
                 0x100089c8        0x4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr50
+ .binary_info.keep.__bi_ptr38
                 0x100089cc        0x4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr75
+ .binary_info.keep.__bi_ptr44
                 0x100089d0        0x4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr81
+ .binary_info.keep.__bi_ptr50
                 0x100089d4        0x4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .binary_info.keep.__bi_ptr75
+                0x100089d8        0x4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .binary_info.keep.__bi_ptr81
+                0x100089dc        0x4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  *(.binary_info.*)
-                0x100089d8                __binary_info_end = .
-                0x100089d8                . = ALIGN (0x4)
-                0x100089d8                __etext = .
+                0x100089e0                __binary_info_end = .
+                0x100089e0                . = ALIGN (0x4)
+                0x100089e0                __etext = .
 
 .ram_vector_table
                 0x20000000       0xc0
@@ -2745,7 +2745,7 @@ LOAD c:/progra~1/raspbe~1/picosd~1.0/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.
                 0x20000000       0xc0 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                 0x20000000                ram_vector_table
 
-.data           0x200000c0      0xb14 load address 0x100089d8
+.data           0x200000c0      0xb34 load address 0x100089e0
                 0x200000c0                __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -2811,187 +2811,187 @@ LOAD c:/progra~1/raspbe~1/picosd~1.0/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.
  *(.rodata*)
                 0x20000ad8                . = ALIGN (0x4)
  *(.data*)
- .data.buttons  0x20000ad8       0x10 CMakeFiles/pico-mouse.dir/main.c.obj
+ .data.buttons  0x20000ad8       0x28 CMakeFiles/pico-mouse.dir/main.c.obj
                 0x20000ad8                buttons
  .data.string_desc_arr
-                0x20000ae8       0x10 CMakeFiles/pico-mouse.dir/usb_descriptors.c.obj
-                0x20000ae8                string_desc_arr
+                0x20000b00       0x10 CMakeFiles/pico-mouse.dir/usb_descriptors.c.obj
+                0x20000b00                string_desc_arr
  .data.striped_spin_lock_num
-                0x20000af8        0x1 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- *fill*         0x20000af9        0x3 
- .data          0x20000afc       0x48 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
-                0x20000afc                irq_handler_chain_slots
-                0x20000b2c                irq_handler_chain_first_slot
-                0x20000b36                irq_handler_chain_remove_tail
+                0x20000b10        0x1 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ *fill*         0x20000b11        0x3 
+ .data          0x20000b14       0x48 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+                0x20000b14                irq_handler_chain_slots
+                0x20000b44                irq_handler_chain_first_slot
+                0x20000b4e                irq_handler_chain_remove_tail
  .data.default_alarm_pool
-                0x20000b44       0x18 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
+                0x20000b5c       0x18 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
  .data.default_alarm_pool_heap
-                0x20000b5c       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x20000b6c        0x4 
+                0x20000b74       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x20000b84        0xc 
  .data.aeabi_bits_funcs
-                0x20000b70       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
-                0x20000b70                aeabi_bits_funcs
-                0x20000b80                aeabi_bits_funcs_end
+                0x20000b90       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x20000b90                aeabi_bits_funcs
+                0x20000ba0                aeabi_bits_funcs_end
  .data.aeabi_mem_funcs
-                0x20000b80       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x20000b80                aeabi_mem_funcs
-                0x20000b90                aeabi_mem_funcs_end
+                0x20000ba0       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x20000ba0                aeabi_mem_funcs
+                0x20000bb0                aeabi_mem_funcs_end
  .data.ep_dir_string
-                0x20000b90        0x8 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x20000b90                ep_dir_string
+                0x20000bb0        0x8 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x20000bb0                ep_dir_string
  .data._usbd_qdef
-                0x20000b98       0x1c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x20000b98                _usbd_qdef
+                0x20000bb8       0x1c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x20000bb8                _usbd_qdef
  .data._usbd_rhport
-                0x20000bb4        0x1 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x20000bb8                . = ALIGN (0x4)
- *fill*         0x20000bb5        0x3 
+                0x20000bd4        0x1 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x20000bd8                . = ALIGN (0x4)
+ *fill*         0x20000bd5        0x3 
  *(.after_data.*)
-                0x20000bb8                . = ALIGN (0x4)
-                0x20000bb8                PROVIDE (__mutex_array_start = .)
+                0x20000bd8                . = ALIGN (0x4)
+                0x20000bd8                PROVIDE (__mutex_array_start = .)
  *(SORT_BY_NAME(.mutex_array.*))
  *(.mutex_array)
- .mutex_array   0x20000bb8        0x8 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x20000bc0                PROVIDE (__mutex_array_end = .)
-                0x20000bc0                . = ALIGN (0x4)
-                0x20000bc0                PROVIDE (__preinit_array_start = .)
+ .mutex_array   0x20000bd8        0x8 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x20000be0                PROVIDE (__mutex_array_end = .)
+                0x20000be0                . = ALIGN (0x4)
+                0x20000be0                PROVIDE (__preinit_array_start = .)
  *(SORT_BY_NAME(.preinit_array.*))
  .preinit_array.00001
-                0x20000bc0        0x4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x20000be0        0x4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
  .preinit_array.00010
-                0x20000bc4        0x4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x20000be4        0x4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .preinit_array.00020
-                0x20000bc8        0x4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x20000be8        0x4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
  .preinit_array.00020
-                0x20000bcc        0x4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x20000bec        0x4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
  *(.preinit_array)
-                0x20000bd0                PROVIDE (__preinit_array_end = .)
-                0x20000bd0                . = ALIGN (0x4)
-                0x20000bd0                PROVIDE (__init_array_start = .)
+                0x20000bf0                PROVIDE (__preinit_array_end = .)
+                0x20000bf0                . = ALIGN (0x4)
+                0x20000bf0                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array)
- .init_array    0x20000bd0        0x4 c:/progra~1/raspbe~1/picosd~1.0/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x20000bd4                PROVIDE (__init_array_end = .)
-                0x20000bd4                . = ALIGN (0x4)
+ .init_array    0x20000bf0        0x4 c:/progra~1/raspbe~1/picosd~1.0/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x20000bf4                PROVIDE (__init_array_end = .)
+                0x20000bf4                . = ALIGN (0x4)
                 [!provide]                PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array)
                 [!provide]                PROVIDE (__fini_array_end = .)
  *(.jcr)
-                0x20000bd4                . = ALIGN (0x4)
-                0x20000bd4                __data_end__ = .
+                0x20000bf4                . = ALIGN (0x4)
+                0x20000bf4                __data_end__ = .
 
-.igot.plt       0x20000bd4        0x0 load address 0x100094ec
- .igot.plt      0x20000bd4        0x0 c:/progra~1/raspbe~1/picosd~1.0/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+.igot.plt       0x20000bf4        0x0 load address 0x10009514
+ .igot.plt      0x20000bf4        0x0 c:/progra~1/raspbe~1/picosd~1.0/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
 .uninitialized_data
-                0x20000bd4        0x0 load address 0x100094ec
-                0x20000bd4                . = ALIGN (0x4)
+                0x20000bf4        0x0 load address 0x10009514
+                0x20000bf4                . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.scratch_x      0x20040000        0x0 load address 0x100094ec
+.scratch_x      0x20040000        0x0 load address 0x10009514
                 0x20040000                __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x20040000                . = ALIGN (0x4)
                 0x20040000                __scratch_x_end__ = .
-                0x100094ec                __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x10009514                __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x20041000        0x0 load address 0x100094ec
+.scratch_y      0x20041000        0x0 load address 0x10009514
                 0x20041000                __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x20041000                . = ALIGN (0x4)
                 0x20041000                __scratch_y_end__ = .
-                0x100094ec                __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x10009514                __scratch_y_source__ = LOADADDR (.scratch_y)
 
-.bss            0x20000bd8      0x9e0
-                0x20000bd8                . = ALIGN (0x4)
-                0x20000bd8                __bss_start__ = .
+.bss            0x20000bf8      0x9f8
+                0x20000bf8                . = ALIGN (0x4)
+                0x20000bf8                __bss_start__ = .
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.bss*)))
  .bss.default_alarm_pool_entries
-                0x20000bd8      0x100 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
- .bss           0x20000cd8       0x1c c:/progra~1/raspbe~1/picosd~1.0/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x20000bf8      0x100 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
+ .bss           0x20000cf8       0x1c c:/progra~1/raspbe~1/picosd~1.0/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
  .bss._app_driver
-                0x20000cf4        0x4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x20000d14        0x4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .bss._ctrl_xfer
-                0x20000cf8       0x14 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x20000d18       0x14 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
  .bss._desc_str
-                0x20000d0c       0x40 CMakeFiles/pico-mouse.dir/usb_descriptors.c.obj
+                0x20000d2c       0x40 CMakeFiles/pico-mouse.dir/usb_descriptors.c.obj
  .bss._hidd_itf
-                0x20000d4c       0x2c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
+                0x20000d6c       0x2c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
  .bss._ubsd_mutexdef
-                0x20000d78        0x8 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x20000d98        0x8 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .bss._usbd_ctrl_buf
-                0x20000d80       0x40 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x20000da0       0x40 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
  .bss._usbd_dev
-                0x20000dc0       0x53 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
- *fill*         0x20000e13        0x1 
+                0x20000de0       0x53 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+ *fill*         0x20000e33        0x1 
  .bss._usbd_mutex
-                0x20000e14        0x4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
- .bss._usbd_q   0x20000e18        0x4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x20000e34        0x4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+ .bss._usbd_q   0x20000e38        0x4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .bss._usbd_qdef_buf
-                0x20000e1c       0xc0 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x20000e1c                _usbd_qdef_buf
+                0x20000e3c       0xc0 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x20000e3c                _usbd_qdef_buf
  .bss.alarm_callbacks
-                0x20000edc       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .bss.claimed   0x20000eec        0x4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x20000efc       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .bss.claimed   0x20000f0c        0x4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
  .bss.configured_freq
-                0x20000ef0       0x28 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .bss.data      0x20000f18        0xc CMakeFiles/pico-mouse.dir/main.c.obj
-                0x20000f18                data
+                0x20000f10       0x28 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .bss.data      0x20000f38        0xc CMakeFiles/pico-mouse.dir/main.c.obj
+                0x20000f38                data
  .bss.default_alarm_pool_entry_ids_high
-                0x20000f24       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
+                0x20000f44       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
  .bss.default_alarm_pool_heap_nodes
-                0x20000f34       0x30 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
- .bss.drivers   0x20000f64        0x4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x20000f54       0x30 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
+ .bss.drivers   0x20000f84        0x4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .bss.e15_last_sof
-                0x20000f68        0x4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x20000f68                e15_last_sof
- .bss.filter    0x20000f6c        0x4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x20000f88        0x4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x20000f88                e15_last_sof
+ .bss.filter    0x20000f8c        0x4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .bss.hw_endpoints
-                0x20000f70      0x400 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x20000f90      0x400 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .bss.next_buffer_ptr
-                0x20001370        0x4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
- .bss.pools     0x20001374       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
- .bss.sd_table  0x20001384      0x100 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x20001384                sd_table
+                0x20001390        0x4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+ .bss.pools     0x20001394       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
+ .bss.sd_table  0x200013a4      0x100 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x200013a4                sd_table
  .bss.sf_clz_func
-                0x20001484        0x4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x20001484                sf_clz_func
- .bss.sf_table  0x20001488      0x100 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-                0x20001488                sf_table
+                0x200014a4        0x4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x200014a4                sf_clz_func
+ .bss.sf_table  0x200014a8      0x100 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x200014a8                sf_table
  .bss.sleep_notifier
-                0x20001588        0x4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
+                0x200015a8        0x4 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
  .bss.start_us.3
-                0x2000158c        0x4 CMakeFiles/pico-mouse.dir/main.c.obj
- .bss.states.1  0x20001590       0x10 CMakeFiles/pico-mouse.dir/main.c.obj
+                0x200015ac        0x4 CMakeFiles/pico-mouse.dir/main.c.obj
+ .bss.states.1  0x200015b0       0x28 CMakeFiles/pico-mouse.dir/main.c.obj
  .bss.target_hi
-                0x200015a0       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x200015d8       0x10 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .bss._app_driver_count
-                0x200015b0        0x1 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x200015e8        0x1 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .bss._sof_enable
-                0x200015b1        0x1 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x200015e9        0x1 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .bss.buttonMask
-                0x200015b2        0x1 CMakeFiles/pico-mouse.dir/main.c.obj
-                0x200015b2                buttonMask
- .bss.claimed   0x200015b3        0x1 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x200015ea        0x1 CMakeFiles/pico-mouse.dir/main.c.obj
+                0x200015ea                buttonMask
+ .bss.claimed   0x200015eb        0x1 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .bss.dataReady
-                0x200015b4        0x1 CMakeFiles/pico-mouse.dir/main.c.obj
-                0x200015b4                dataReady
+                0x200015ec        0x1 CMakeFiles/pico-mouse.dir/main.c.obj
+                0x200015ec                dataReady
  .bss.irq_hander_chain_free_slot_head
-                0x200015b5        0x1 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .bss.mask.0    0x200015b6        0x1 CMakeFiles/pico-mouse.dir/main.c.obj
+                0x200015ed        0x1 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .bss.mask.0    0x200015ee        0x1 CMakeFiles/pico-mouse.dir/main.c.obj
  .bss.timer_callbacks_pending
-                0x200015b7        0x1 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x200015ef        0x1 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  *(COMMON)
-                0x200015b8                . = ALIGN (0x4)
-                0x200015b8                __bss_end__ = .
+                0x200015f0                . = ALIGN (0x4)
+                0x200015f0                __bss_end__ = .
 
-.heap           0x200015b8      0x800
-                0x200015b8                __end__ = .
-                0x200015b8                end = __end__
+.heap           0x200015f0      0x800
+                0x200015f0                __end__ = .
+                0x200015f0                end = __end__
  *(.heap*)
- .heap          0x200015b8      0x800 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
-                0x20001db8                __HeapLimit = .
+ .heap          0x200015f0      0x800 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+                0x20001df0                __HeapLimit = .
 
 .stack1_dummy   0x20040000        0x0
  *(.stack1*)
@@ -3000,8 +3000,8 @@ LOAD c:/progra~1/raspbe~1/picosd~1.0/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.
  *(.stack*)
  .stack         0x20041000      0x800 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
-.flash_end      0x100094ec        0x0
-                0x100094ec                __flash_binary_end = .
+.flash_end      0x10009514        0x0
+                0x10009514                __flash_binary_end = .
                 0x20040000                __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x20041000                __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x20042000                __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -3079,7 +3079,7 @@ LOAD CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pic
 LOAD CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/tusb.c.obj
 LOAD CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 LOAD CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
-LOAD C:\Users\Brent\AppData\Local\Temp\cc406eDf.o
+LOAD C:\Users\Brent\AppData\Local\Temp\ccCxNQSs.o
 LOAD c:/progra~1/raspbe~1/picosd~1.0/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libstdc++.a
 LOAD c:/progra~1/raspbe~1/picosd~1.0/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a
 START GROUP
@@ -3190,7 +3190,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x0000071e       0x2c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
  .ARM.attributes
-                0x0000074a       0x22 C:\Users\Brent\AppData\Local\Temp\cc406eDf.o
+                0x0000074a       0x22 C:\Users\Brent\AppData\Local\Temp\ccCxNQSs.o
  .ARM.attributes
                 0x0000076c       0x1e c:/progra~1/raspbe~1/picosd~1.0/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
  .ARM.attributes
@@ -3320,39 +3320,39 @@ LOAD linker stubs
  .debug_abbrev  0x00005be2      0x41c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/tusb.c.obj
  .debug_abbrev  0x00005ffe      0x437 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 
-.debug_loc      0x00000000    0x17e89
+.debug_loc      0x00000000    0x17e9f
  .debug_loc     0x00000000      0x565 CMakeFiles/pico-mouse.dir/main.c.obj
  .debug_loc     0x00000565      0x17a CMakeFiles/pico-mouse.dir/usb_descriptors.c.obj
- .debug_loc     0x000006df      0x72c CMakeFiles/pico-mouse.dir/C_/Users/Brent/Documents/GitHub/PMW3360-Firmware/src/PMW3360.c.obj
- .debug_loc     0x00000e0b     0x118d CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_loc     0x00001f98       0xe9 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_loc     0x00002081      0x45f CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_loc     0x000024e0      0x233 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_loc     0x00002713     0x13f5 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_loc     0x00003b08       0x60 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_loc     0x00003b68     0x152e CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_loc     0x00005096       0xf5 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_sync/critical_section.c.obj
- .debug_loc     0x0000518b     0x31cb CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
- .debug_loc     0x00008356      0xacb CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_loc     0x00008e21     0x1446 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_loc     0x0000a267      0x81d CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_loc     0x0000aa84      0x2f3 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_loc     0x0000ad77      0x2ec CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_loc     0x0000b063       0x71 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_loc     0x0000b0d4      0x674 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_loc     0x0000b748     0x2095 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_loc     0x0000d7dd      0x1a1 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_loc     0x0000d97e       0x59 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_loc     0x0000d9d7       0x73 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_loc     0x0000da4a      0xe23 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_loc     0x0000e86d      0xab5 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
- .debug_loc     0x0000f322      0xebe CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
- .debug_loc     0x000101e0      0x7a9 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- .debug_loc     0x00010989     0x2420 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
- .debug_loc     0x00012da9      0x4de CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
- .debug_loc     0x00013287     0x1245 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
- .debug_loc     0x000144cc      0xe2f CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/tusb.c.obj
- .debug_loc     0x000152fb     0x2b8e CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+ .debug_loc     0x000006df      0x742 CMakeFiles/pico-mouse.dir/C_/Users/Brent/Documents/GitHub/PMW3360-Firmware/src/PMW3360.c.obj
+ .debug_loc     0x00000e21     0x118d CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_loc     0x00001fae       0xe9 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_loc     0x00002097      0x45f CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_loc     0x000024f6      0x233 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_loc     0x00002729     0x13f5 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_loc     0x00003b1e       0x60 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_loc     0x00003b7e     0x152e CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_loc     0x000050ac       0xf5 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_sync/critical_section.c.obj
+ .debug_loc     0x000051a1     0x31cb CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_loc     0x0000836c      0xacb CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_loc     0x00008e37     0x1446 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_loc     0x0000a27d      0x81d CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_loc     0x0000aa9a      0x2f3 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_loc     0x0000ad8d      0x2ec CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_loc     0x0000b079       0x71 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_loc     0x0000b0ea      0x674 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_loc     0x0000b75e     0x2095 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_loc     0x0000d7f3      0x1a1 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_loc     0x0000d994       0x59 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_loc     0x0000d9ed       0x73 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_loc     0x0000da60      0xe23 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_loc     0x0000e883      0xab5 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
+ .debug_loc     0x0000f338      0xebe CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+ .debug_loc     0x000101f6      0x7a9 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ .debug_loc     0x0001099f     0x2420 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+ .debug_loc     0x00012dbf      0x4de CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+ .debug_loc     0x0001329d     0x1245 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
+ .debug_loc     0x000144e2      0xe2f CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/tusb.c.obj
+ .debug_loc     0x00015311     0x2b8e CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 
 .debug_aranges  0x00000000     0x13f8
  .debug_aranges
@@ -3482,49 +3482,49 @@ LOAD linker stubs
  .debug_ranges  0x000042d0      0x170 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/tusb.c.obj
  .debug_ranges  0x00004440      0x370 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 
-.debug_line     0x00000000    0x170ae
- .debug_line    0x00000000      0xa74 CMakeFiles/pico-mouse.dir/main.c.obj
- .debug_line    0x00000a74      0x348 CMakeFiles/pico-mouse.dir/usb_descriptors.c.obj
- .debug_line    0x00000dbc      0x972 CMakeFiles/pico-mouse.dir/C_/Users/Brent/Documents/GitHub/PMW3360-Firmware/src/PMW3360.c.obj
- .debug_line    0x0000172e      0xd5a CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_line    0x00002488      0x2d6 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_line    0x0000275e      0x4e3 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_line    0x00002c41      0x4df CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_line    0x00003120     0x112c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_line    0x0000424c      0x28e CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_line    0x000044da     0x1173 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_line    0x0000564d      0x319 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_sync/critical_section.c.obj
- .debug_line    0x00005966     0x1cb8 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
- .debug_line    0x0000761e      0xd07 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_line    0x00008325      0x8e8 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_line    0x00008c0d      0xadc CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_line    0x000096e9      0x60f CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_line    0x00009cf8      0x45b CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_line    0x0000a153      0x2ff CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_line    0x0000a452      0xbfe CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_line    0x0000b050     0x1254 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_line    0x0000c2a4      0x163 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_line    0x0000c407      0x26b CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_line    0x0000c672      0x2ec CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
- .debug_line    0x0000c95e      0x441 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .debug_line    0x0000cd9f      0x3bc CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_line    0x0000d15b      0x6b9 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .debug_line    0x0000d814       0xb3 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
- .debug_line    0x0000d8c7      0x3f7 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
- .debug_line    0x0000dcbe      0x3ae CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_line    0x0000e06c      0x1e3 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
- .debug_line    0x0000e24f       0xdd CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_line    0x0000e32c       0xeb CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
- .debug_line    0x0000e417      0x211 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .debug_line    0x0000e628      0xfbd CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_line    0x0000f5e5      0xe1f CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
- .debug_line    0x00010404      0xf71 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
- .debug_line    0x00011375      0xadf CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- .debug_line    0x00011e54     0x2072 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
- .debug_line    0x00013ec6      0x4bf CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
- .debug_line    0x00014385      0xb2d CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
- .debug_line    0x00014eb2      0xc5b CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/tusb.c.obj
- .debug_line    0x00015b0d     0x15a1 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+.debug_line     0x00000000    0x170af
+ .debug_line    0x00000000      0xa75 CMakeFiles/pico-mouse.dir/main.c.obj
+ .debug_line    0x00000a75      0x348 CMakeFiles/pico-mouse.dir/usb_descriptors.c.obj
+ .debug_line    0x00000dbd      0x972 CMakeFiles/pico-mouse.dir/C_/Users/Brent/Documents/GitHub/PMW3360-Firmware/src/PMW3360.c.obj
+ .debug_line    0x0000172f      0xd5a CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_line    0x00002489      0x2d6 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_line    0x0000275f      0x4e3 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_line    0x00002c42      0x4df CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_line    0x00003121     0x112c CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_line    0x0000424d      0x28e CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_line    0x000044db     0x1173 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_line    0x0000564e      0x319 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_sync/critical_section.c.obj
+ .debug_line    0x00005967     0x1cb8 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_line    0x0000761f      0xd07 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_line    0x00008326      0x8e8 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_line    0x00008c0e      0xadc CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_line    0x000096ea      0x60f CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_line    0x00009cf9      0x45b CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_line    0x0000a154      0x2ff CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_line    0x0000a453      0xbfe CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_line    0x0000b051     0x1254 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_line    0x0000c2a5      0x163 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_line    0x0000c408      0x26b CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_line    0x0000c673      0x2ec CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+ .debug_line    0x0000c95f      0x441 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .debug_line    0x0000cda0      0x3bc CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_line    0x0000d15c      0x6b9 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .debug_line    0x0000d815       0xb3 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+ .debug_line    0x0000d8c8      0x3f7 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+ .debug_line    0x0000dcbf      0x3ae CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_line    0x0000e06d      0x1e3 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+ .debug_line    0x0000e250       0xdd CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_line    0x0000e32d       0xeb CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+ .debug_line    0x0000e418      0x211 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .debug_line    0x0000e629      0xfbd CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_line    0x0000f5e6      0xe1f CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
+ .debug_line    0x00010405      0xf71 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+ .debug_line    0x00011376      0xadf CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ .debug_line    0x00011e55     0x2072 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+ .debug_line    0x00013ec7      0x4bf CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+ .debug_line    0x00014386      0xb2d CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
+ .debug_line    0x00014eb3      0xc5b CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/tusb.c.obj
+ .debug_line    0x00015b0e     0x15a1 CMakeFiles/pico-mouse.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.0/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 
 .debug_str      0x00000000     0x7915
  .debug_str     0x00000000      0x7da CMakeFiles/pico-mouse.dir/main.c.obj

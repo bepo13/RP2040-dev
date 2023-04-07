@@ -42,12 +42,24 @@ typedef struct {
 // Mouse button configuration structure (add buttons here)
 t_button buttons[] = {
     {
-        .pin = 14,
+        .pin = 2,
         .mask = MOUSE_BUTTON_LEFT
     },
     {
-        .pin = 15,
+        .pin = 22,
         .mask = MOUSE_BUTTON_RIGHT
+    },
+    {
+        .pin = 6,
+        .mask = MOUSE_BUTTON_MIDDLE
+    },
+    {
+        .pin = 7,
+        .mask = MOUSE_BUTTON_BACKWARD
+    },
+    {
+        .pin = 8,
+        .mask = MOUSE_BUTTON_FORWARD
     }
 };
 
