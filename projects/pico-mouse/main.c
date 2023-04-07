@@ -40,7 +40,6 @@
 #define PIN_LED             25
 
 // Polling tasks
-void led_task(void);
 void hid_task(void);
 
 // Main routine
@@ -77,14 +76,21 @@ int main(void)
     return 0;
 }
 
-bool dataReady = false;
-PMW3360_data data = {0};
-uint8_t buttonMask = 0;
+// Data structure for HID report
+typedef struct {
+    bool ready;
+    uint8_t mask;
+    uint8_t x;
+    uint8_t y;
+} t_hid_data;
+static t_hid_data hid_data = {0};
 
 // Send HID report at a fixed polling rate
 void hid_task(void)
 {
+    uint8_t buttonMask;
     uint32_t timestamp;
+    PMW3360_data data;
     
     // Poll mouse at a fixed rate
     static uint32_t start_us = 0;
@@ -105,12 +111,17 @@ void hid_task(void)
         else {
             // Read data from PMW3360 sensor
             PMW3360_read(&data);
-            dataReady = true;
+
+            // Populate HID data being reported
+            hid_data.x = data.dx;
+            hid_data.y = data.dy;
+            hid_data.mask = buttonMask;
+            hid_data.ready = true;
 
             // Send mouse report to host if HID is ready
             if (tud_hid_ready()) {
-                tud_hid_mouse_report(REPORT_ID_MOUSE, buttonMask, data.dx, data.dy, 0, 0);
-                dataReady = false;
+                tud_hid_mouse_report(REPORT_ID_MOUSE, hid_data.mask, hid_data.x, hid_data.y, 0, 0);
+                hid_data.ready = false;
             }
         }
     }
@@ -146,9 +157,9 @@ void tud_resume_cb(void)
 void tud_hid_report_complete_cb(uint8_t instance, uint8_t const* report, uint16_t len)
 {
     // If data is ready send report to host
-    if (dataReady) {
-        tud_hid_mouse_report(REPORT_ID_MOUSE, buttonMask, data.dx, data.dy, 0, 0);
-        dataReady = false;
+    if (hid_data.ready) {
+        tud_hid_mouse_report(REPORT_ID_MOUSE, hid_data.mask, hid_data.x, hid_data.y, 0, 0);
+        hid_data.ready = false;
     }
     return;
 }
