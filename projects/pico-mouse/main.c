@@ -36,7 +36,7 @@
 // Poll mouse at a fixed rate (1000Hz is max for USB1.1)
 #define POLLING_RATE_HZ     1000
 
-// GPIO pin for LED
+// GPIO pins
 #define PIN_LED             25
 
 // Polling tasks
@@ -45,7 +45,10 @@ void hid_task(void);
 // Main routine
 int main(void)
  {
-    // Initialize LED pin
+    // Set clock to 48MHz
+    set_sys_clock_khz(48000, true);
+
+    // Initialize GPIO pins
     gpio_init(PIN_LED);
     gpio_set_dir(PIN_LED, GPIO_OUT);
     gpio_put(PIN_LED, 0);
